@@ -199,7 +199,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 	</div>
 
-<script defer src="/local/templates/blizfinans/js/scripts.js"></script>
+<script data-skip-moving="true" defer src="/local/templates/blizfinans/js/scripts.js?nc=<?=filectime($_SERVER['DOCUMENT_ROOT'].'/local/templates/blizfinans/js/scripts.js')?>"></script>
 
 </body>
 </html>						
