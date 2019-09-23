@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Офисы</title>
+
+	<link href="/css/styles.css" rel="preload" as="style">
+	<link href="/js/scripts.js" rel="preload" as="script">
+
+	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Деньги в нужное время">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="http://blizfinans.wndrbase.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Офисы">
+	<meta property="og:description" content="Деньги в нужное время">
+
+	<meta property="og:site_name" content="БлицФинанс">
+	<meta property="og:image" content="http://blizfinans.wndrbase.com/og.jpg">
+	<meta property="og:image:secure_url" content="http://blizfinans.wndrbase.com/og.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="http://blizfinans.wndrbase.com/og-236.png">
+	<meta property="og:image:width" content="236">
+	<meta property="og:image:height" content="236">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="Деньги в нужное время">
+	<meta name="twitter:title" content="Офисы">
+	<meta name="twitter:image" content="http://blizfinans.wndrbase.com/og.jpg">
+
+	<link href="/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+
+		<div class="center">
+
+			<div class="header__logo">
+
+				<a href="/">
+					<img src="/img/logo.svg" alt="" width="240" height="50">
+				</a>
+
+			</div>
+
+			<div class="visible-md">
+
+				<button type="button" data-modal="lk" class="header__lk-ico button" aria-label="Личный кабинет">
+					<svg class="icon-bx-log-in visible-md" width="15" height="15" viewBox="0 0 15 15">
+						<use xlink:href="/images/sprite.svg#bx-log-in"/>
+					</svg>
+				</button>
+
+				<button class="button btn-menu-toggle" type="button">
+					<span>открыть меню</span>
+				</button>
+
+			</div>
+
+			<div class="header__right">
+
+				<button class="button btn-menu-toggle btn-menu-toggle--close" type="button">
+					<span>закрыть меню</span>
+				</button>
+
+				<nav class="header__menu">
+
+
+
+<ul class="menu">
+
+
+
+	<li class="menu__item">
+
+		<a class="menu__link" href="/">
+			Главная
+		</a>
+
+	</li>
+
+
+
+	<li class="menu__item">
+
+		<a class="menu__link" href="/documents">
+			Документы
+		</a>
+
+	</li>
+
+
+
+	<li class="menu__item menu__item--active">
+
+		<a class="menu__link" href="/office">
+			Офисы
+		</a>
+
+	</li>
+
+
+
+</ul>
+
+				</nav>
+
+				<div class="header__tel">
+
+					<a href="tel:88007006202">
+						<svg class="icon-bxs-phone-call" width="19" height="19" viewBox="0 0 19 19">
+							<use xlink:href="/images/sprite.svg#bxs-phone-call"/>
+						</svg>
+						8 800 700 62 02
+					</a>
+
+				</div>
+
+				<div class="header__lk">
+
+					<button type="button" data-modal="lk" class="btn btn--tealish">
+						<span>Личный кабинет</span>
+					</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<main class="main">
+
+
+
+	<article class="page">
+
+		<div class="center">
+
+			<h1 class="page__title h2">
+				Офисы
+			</h1>
+
+			<ul class="office-list">
+
+				<li>
+					Удмуртская республика
+				</li>
+				<li>
+					<a href="/">Пермский край</a>
+				</li>
+				<li>
+					<a href="/">Республика Башкоркастан</a>
+				</li>
+				<li>
+					<a href="/">Республика Татарстан</a>
+				</li>
+				<li>
+					<a href="/">Кировская область</a>
+				</li>
+				<li>
+					<a href="/">Республика Крым</a>
+				</li>
+
+			</ul>
+
+			<hr>
+
+			<div class="office-map">
+
+				<h2 class="office-map__title h3">
+					Удмуртская республика
+				</h2>
+
+				<div class="office-map__map" id="map">
+
+				<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+				<script>
+
+					function initMap() {
+
+						var myMap = new ymaps.Map('map', {
+							center: [56.475285, 53.813856],
+							zoom: 17,
+							controls: []
+						});
+
+						var zoomControl = new ymaps.control.ZoomControl({
+							options: {
+								visible: true
+							}
+						});
+
+						myMap.controls.add(zoomControl);
+
+/* что должно быть на карте необходимо уточниьть */
+						myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+							hintContent: 'ул. Красноармейская д. 85 (р-н "Центр")',
+							balloonContent: 'тел. 8912-747-90-08'
+						}, {
+							iconLayout: 'default#image',
+				/*            iconImageHref: 'images/myIcon.gif',
+							iconImageSize: [30, 42],
+							iconImageOffset: [-5, -38]
+				*/      });
+
+
+						myMap.geoObjects.add(myPlacemark);
+
+					}
+
+					ymaps.ready(initMap);
+
+				</script>
+
+				</div>
+
+			</div>
+
+			<div class="office-city office-city--primary">
+
+				<svg class="icon-home">
+					<use xlink:href="/images/sprite.svg#home"/>
+				</svg>
+
+				<h3 class="office-city__name">
+					г.Сарапул
+				</h3>
+
+				<div class="office-column">
+
+
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. Красноармейская д. 85 (р-н "Центр")
+
+							<br>
+
+							<a href="tel:89127479008">
+								тел. 8912-747-90-08
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. Площадь Свободы д. 1 (Цетральный Рынок), пав 58
+
+							<br>
+
+							<a href="tel:89097158272">
+								тел. 8909-715-82-72
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. К. Маркса д. 60 (здание Автовокзала)
+
+							<br>
+
+							<a href="tel:89127636858">
+								тел. 8912-763-68-58
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. Озерная д. 20 (р-н "Поворот")
+
+							<br>
+
+							<a href="tel:89128587171">
+								тел. 8912-858-71-71
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. Ленина д. 62 (р-н "ж/д Вокзал", м-н БестПрайс)
+
+							<br>
+
+							<a href="tel:89124548448">
+								тел. 8912-454-84-48
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. Ленина, 2а
+
+							<br>
+
+							<a href="tel:89097158185">
+								тел. 8909-715-81-85
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+					<div class="office-column__item">
+
+						<p class="office-city__address">
+
+							ул. 20 Лет Победы д. 1а (р-н "Элеконд", ТЦ&nbsp;МЕЧТА)
+
+							<br>
+
+							<a href="tel:89127573883">
+								тел. 8912-757-38-83
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+			<div class="office-column office-column--second">
+
+
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Каракулино
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Каманина д. 34
+
+							<br>
+
+							<a href="tel:89120187888">
+								тел. 8912-018-78-88
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Дебесы
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Каманина д. 34
+
+							<br>
+
+							<a href="tel:89120187888">
+								тел. 8912-018-78-88
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Шаркан
+						</h3>
+
+						<p class="office-city__address">
+
+							ул.Советская, д. 48а, ТЦ «Зангари»
+
+							<br>
+
+							<a href="tel:89508329202">
+								тел. 8950-832-92-02
+							</a>,
+
+							<a href="tel:8(34136)32080">
+								8(34136) 3-20-80
+							</a>
+
+							
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							п.Ува
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Каманина д. 34
+
+							<br>
+
+							<a href="tel:89120187888">
+								тел. 8912-018-78-88
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							п.Кез
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Пушкина, д. 8а
+
+							<br>
+
+							<a href="tel:89124620338">
+								тел. 8912-462-03-38
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Грахово
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Колпакова д. 10
+
+							<br>
+
+							<a href="tel:89821244220">
+								тел. 8982-124-42-20
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							п.Кизнер
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Карла Маркса д. 15
+
+							<br>
+
+							<a href="tel:89199120778">
+								тел. 8919-912-07-78
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home">
+							<use xlink:href="/images/sprite.svg#home"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							г.Камбарка
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Суворова д. 2
+
+							<br>
+
+							<a href="tel:89128717047">
+								тел. 8912-871-70-47
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Алнаши
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Ленина д. 43
+
+							<br>
+
+							<a href="tel:89829903093">
+								тел. 8982-990-30-93
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с. Кильмезь
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Зеленая д. 12г, ТЦ "Рубин", 2 этаж
+
+							<br>
+
+							<a href="tel:89615664483">
+								тел. 8961-566-44-83
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="office-column__item office-column__item--second">
+
+					<div class="office-city">
+
+						<svg class="icon-home-alt">
+							<use xlink:href="/images/sprite.svg#home-alt"/>
+						</svg>
+
+						<h3 class="office-city__name">
+							с.Сюмси
+						</h3>
+
+						<p class="office-city__address">
+
+							ул. Советская д. 58, ТЦ "Верещагино"
+
+							<br>
+
+							<a href="tel:89630660228">
+								тел. 8963-066-02-28
+							</a>
+
+							<br>
+
+							<a class="office-city__link" href="/" target="_blank" rel="nofollow">
+								смотреть на карте
+							</a>
+
+						</p>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</article>
+
+		<aside class="timer-money" data-timer="15">
+
+			<div class="center">
+
+				<h3 class="h3">
+					При онлайн-оформлении <br class="visible-sm"> деньги будут у вас в
+				</h3>
+
+				<div class="timer-money__tablo">
+
+					<span class="timer-money__tablo-item hide"></span>
+					<span class="timer-money__tablo-item hide"></span>
+					<span class="timer-money__tablo-sep">Через 15 минут</span>
+					<span class="timer-money__tablo-item hide"></span>
+					<span class="timer-money__tablo-item hide"></span>
+
+				</div>
+
+				<div class="timer-money__btn">
+
+					<a href="/" class="btn btn--red btn--big">
+						<span>Получить деньги</span>
+					</a>
+
+				</div>
+
+			</div>
+
+		</aside>
+
+	<hr class="hidden-md">
+
+
+		<article class="why-we why-we--office">
+
+			<div class="center">
+
+				<h1 class="why-we__title h3">
+					Почему выбирают <br>ООО МКК "ПолтинниКъ?
+				</h1>
+
+				<div class="why-we__text">
+
+					<p>
+						Срочно нужны деньги, а взять их негде! Знакомая ситуация? И сумма-то необходимая сравнительно невелика, но перехватить <br>не у кого, а до зарплаты еще несколько дней...
+					</p>
+
+					<p>
+						Для решения моментальных финансовых проблем, будь то поломка авто, срочная покупка или другие непредвиденные обстоятельства, существует такой вид займа, как микрозайм.
+					</p>
+
+					<p>
+						На самом деле, микрозайм – это тот же кредит, только оформляемый очень быстро.
+					</p>
+
+					<p>
+						Как правило, на его оформление уходит около двадцати минут. <br>Из документов необходимо предоставить только паспорт и ИНН. <br class="hidden-sm">Работают такие микрозаймы под девизом «Не суетись, перехватись». <br>И действительно, они это делают.
+					</p>
+
+					<p>
+						Компания «ПолтинниКъ» - это способ взять <br class="visible-sm">деньги в долг, быстро <br>и просто. Это займы без залога, без справок и без поручителей.
+					</p>
+
+				</div>
+
+			</div>
+
+		</article>
+
+
+
+	</main>
+
+	<footer class="footer">
+
+		<div class="center">
+
+			<div class="footer__top">
+
+				<div class="footer__left">
+
+					<div class="footer__logo">
+
+						<a href="/">
+							<img src="/img/logo.svg" alt="" width="240" height="50">
+						</a>
+
+					</div>
+
+					<p class="footer__copyright hidden-md">
+						Займы предоставляются ООО МКК «ПолтинниКъ» <br>@ ООО МКК «ПолтинниКъ» 2017-2019. Все права защещены <br>ИНН 1838020818 <br>ОГРН 1171832014034
+					</p>
+
+				</div>
+
+				<div class="footer__right">
+
+					<div class="footer__menu">
+
+						<h3 class="footer__menu-head">
+							Меню
+						</h3>
+
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="/documents">Документы</a></li>
+							<li><a href="/office">Офисы</a></li>
+						</ul>
+
+					</div>
+
+					<div class="footer__contact">
+
+						<div class="footer__tel">
+
+							<a href="tel:88007006202">
+								<svg class="icon-bxs-phone-call" width="19" height="19" viewBox="0 0 19 19">
+									<use xlink:href="/images/sprite.svg#bxs-phone-call"/>
+								</svg>
+								8 800 700 62 02
+							</a>
+
+						</div>
+
+						<p class="footer__address">
+
+							427960, Удмуртская Республика, <br class="visible-md">г. Сарапул, <br class="visible-sm">ул.Красноармейская, д.&nbsp;85, оф.12. <br> <span class="hidden-sm">Регистрационный номер в государственном реестре МФО: №&nbsp;17&nbsp;03394008529.</span>
+
+						</p>
+
+						<div class="footer__developer hidden-md">
+
+							<a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
+								Разработка сайта <b>Sputnik</b>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="visible-md">
+
+					<span class="footer__address visible-sm">
+						Регистрационный номер в государственном реестре МФО: №&nbsp;17&nbsp;03394008529.
+					</span>
+
+					<p class="footer__copyright">
+						Займы предоставляются ООО МКК «ПолтинниКъ» <br>@ ООО МКК «ПолтинниКъ» 2017-2019. Все права защещены <br>ИНН 1838020818 <br>ОГРН 1171832014034
+					</p>
+
+					<div class="footer__developer">
+
+						<a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
+							Разработка сайта <b>Sputnik</b>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="footer__bottom">
+
+			<p class="center">
+				ООО МКК «ПолтинниКъ»
+			</p>
+
+		</div>
+
+	</footer>
+
+</div>
+
+	<div class="modal">
+
+		<div class="modal__box">
+
+			<div class="modal__item modal__item--lk">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h3">
+						Вход в личный кабинет
+					</h3>
+
+					<label class="modal-form__input input-box">
+
+						<input class="input-box__input input" name="email" type="email">
+
+						<span class="input-box__label">
+							Email
+						</span>
+
+					</label>
+
+					<label class="modal-form__input input-box">
+
+						<input class="input-box__input input" name="password" type="password">
+
+						<span class="input-box__label">
+							Пароль
+						</span>
+
+					</label>
+
+					<div class="modal-form__links">
+
+						<button class="modal-form__links-red button" type="button" data-modal="reset">
+							Забыли пароль?
+						</button>
+
+						<button class="modal-form__links-dark button" type="button" data-modal="reg">
+							Регистрация
+						</button>
+
+					</div>
+
+					<button class="modal-form__submit btn btn--big btn--red">
+						<span>Войти</span>
+					</button>
+
+				</form>
+
+			</div>
+
+			<div class="modal__item modal__item--reset">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h3">
+						Восстановление пароля
+					</h3>
+
+					<label class="modal-form__input input-box input-box--error">
+
+						<input class="input-box__input input input--error" name="email" type="email">
+
+						<span class="input-box__label">
+							Email
+						</span>
+
+						<span class="input-box__text">
+							Не верно введён e-mail
+						</span>
+
+					</label>
+
+					<button class="modal-form__submit btn btn--big btn--red">
+						<span>Отправить</span>
+					</button>
+
+				</form>
+
+			</div>
+
+			<button type="button" class="modal__close modal__close-btn button">
+				Закрыть
+			</button>
+
+		</div>
+
+	</div>
+
+<script defer src="/js/scripts.js"></script>
+
+</body>
+</html>
