@@ -21,8 +21,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 
 					<p class="footer__copyright hidden-md">
-						Займы предоставляются ООО МКК «ПолтинниКъ» <br>@ ООО МКК «ПолтинниКъ» 2017-2019. Все права защещены <br>ИНН 1838020818 <br>ОГРН 1171832014034
-					</p>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/copyright.php"
+	), false
+);?>					</p>
 
 				</div>
 
@@ -34,11 +42,25 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 							Меню
 						</h3>
 
-						<ul>
-							<li><a href="/">Главная</a></li>
-							<li><a href="/documents">Документы</a></li>
-							<li><a href="/office">Офисы</a></li>
-						</ul>
+
+						<?$APPLICATION->IncludeComponent(
+							"bitrix:menu",
+							"bottom",
+							Array(
+								"ALLOW_MULTI_SELECT" => "N",
+								"CHILD_MENU_TYPE" => "",
+								"DELAY" => "N",
+								"MAX_LEVEL" => "1",
+								"MENU_CACHE_GET_VARS" => array(""),
+								"MENU_CACHE_TIME" => "360000",
+								"MENU_CACHE_TYPE" => "A",
+								"MENU_CACHE_USE_GROUPS" => "N",
+								"ROOT_MENU_TYPE" => "top",
+								"USE_EXT" => "N",
+								"CACHE_SELECTED_ITEMS" => "N",
+							)
+						);?>	
+						
 
 					</div>
 
@@ -57,15 +79,40 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 						<p class="footer__address">
 
-							427960, Удмуртская Республика, <br class="visible-md">г. Сарапул, <br class="visible-sm">ул.Красноармейская, д.&nbsp;85, оф.12. <br> <span class="hidden-sm">Регистрационный номер в государственном реестре МФО: №&nbsp;17&nbsp;03394008529.</span>
-
-						</p>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/address.php"
+	), false
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/reg_number.php"
+	), false
+);?>
+							</p>
 
 						<div class="footer__developer hidden-md">
 
-							<a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
-								Разработка сайта <b>Sputnik</b>
-							</a>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/developer.php"
+	), false
+);?>
 
 						</div>
 
@@ -76,18 +123,43 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				<div class="visible-md">
 
 					<span class="footer__address visible-sm">
-						Регистрационный номер в государственном реестре МФО: №&nbsp;17&nbsp;03394008529.
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/reg_number.php"
+	), false
+);?>
 					</span>
 
 					<p class="footer__copyright">
-						Займы предоставляются ООО МКК «ПолтинниКъ» <br>@ ООО МКК «ПолтинниКъ» 2017-2019. Все права защещены <br>ИНН 1838020818 <br>ОГРН 1171832014034
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/copyright.php"
+	), false
+);?>
 					</p>
 
 					<div class="footer__developer">
 
-						<a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
-							Разработка сайта <b>Sputnik</b>
-						</a>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/developer.php"
+	), false
+);?>
 
 					</div>
 
@@ -100,7 +172,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<div class="footer__bottom">
 
 			<p class="center">
-				ООО МКК «ПолтинниКъ»
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/footer/bottom.php"
+	), false
+);?>
 			</p>
 
 		</div>

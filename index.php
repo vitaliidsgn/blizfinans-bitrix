@@ -437,13 +437,15 @@ $APPLICATION->SetTitle('Главная');
 									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
 								</svg>
 
+								<div class="form-input-note"></div>
 								<input placeholder="+7 ___ ___ __ __" type="tel" class="input inputmask inputmask--phone" required="required">
 
 							</div>
-
+							
 							<button class="btn btn--red">
 								<span>Перезвонить мне</span>
 							</button>
+							
 
 						</form>
 
@@ -816,92 +818,68 @@ $APPLICATION->SetTitle('Главная');
 
 						<div class="swiper-wrapper">
 
-							<blockquote class="swiper-slide feedback__item">
-
-								<svg class="icon-ldquo">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#ldquo"/>
-								</svg>
-
-								<svg class="icon-rdquo">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#rdquo"/>
-								</svg>
-
-								<header class="feedback__autor">
-
-									<figure>
-
-										<picture>
-
-											<source srcset="/local/templates/blizfinans/img/feedback/autor@1x.webp 1x, /local/templates/blizfinans/img/feedback/autor@2x.webp 2x" type="image/webp">
-											<source srcset="/local/templates/blizfinans/img/feedback/autor@1x.jpg 1x, /local/templates/blizfinans/img/feedback/autor@2x.jpg 2x">
-
-											<img src="/local/templates/blizfinans/img/feedback/autor@1x.jpg" alt="">
-
-										</picture>
-
-										<figcaption>
-
-											<b>
-												Воробьева Ольга
-											</b>
-
-											45 лет, секретарь
-
-										</figcaption>
-
-									</figure>
-
-								</header>
-
-								<p class="feedback__text">
-									Уже 3-ий раз пользуюсь кредитами от «ПолтинниКъ». Придя первый раз сюда, чего-то боялась, но займы оказались мне всегда по-карману, так как никуда не надо бегать, как это надо делать в других займам, нужно всего лишь принести документы и заполнить анкету. Сотрудники всегда предупредят по телефону, что пора делать оплату в кассу. Спасибо вашей компании за такой быстрый Заем "Универсальны", который нам иногда так нужен.
-								</p>
-
-							</blockquote>
-
-							<blockquote class="swiper-slide feedback__item">
-
-								<svg class="icon-ldquo">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#ldquo"/>
-								</svg>
-
-								<svg class="icon-rdquo">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#rdquo"/>
-								</svg>
-
-								<header class="feedback__autor">
-
-									<figure>
-
-										<picture>
-
-											<source srcset="/local/templates/blizfinans/img/feedback/autor@1x.webp 1x, /local/templates/blizfinans/img/feedback/autor@2x.webp 2x" type="image/webp">
-											<source srcset="/local/templates/blizfinans/img/feedback/autor@1x.jpg 1x, /local/templates/blizfinans/img/feedback/autor@2x.jpg 2x">
-
-											<img src="/local/templates/blizfinans/img/feedback/autor@1x.jpg" alt="">
-
-										</picture>
-
-										<figcaption>
-
-											<b>
-												Воробьева Ольга
-											</b>
-
-											45 лет, секретарь
-
-										</figcaption>
-
-									</figure>
-
-								</header>
-
-								<p class="feedback__text">
-									Уже 3-ий раз пользуюсь кредитами от «ПолтинниКъ». Придя первый раз сюда, чего-то боялась, но займы оказались мне всегда по-карману, так как никуда не надо бегать, как это надо делать в других займам, нужно всего лишь принести документы и заполнить анкету. Сотрудники всегда предупредят по телефону, что пора делать оплату в кассу. Спасибо вашей компании за такой быстрый Заем "Универсальны", который нам иногда так нужен.
-								</p>
-
-							</blockquote>
-
+<?$APPLICATION->IncludeComponent("bitrix:news.list", "feedback", Array(
+	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+		"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+		"AJAX_MODE" => "N",	// Включить режим AJAX
+		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+		"CACHE_GROUPS" => "N",	// Учитывать права доступа
+		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CHECK_DATES" => "N",	// Показывать только активные на данный момент элементы
+		"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+		"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+		"DISPLAY_DATE" => "Y",	// Выводить дату элемента
+		"DISPLAY_NAME" => "Y",	// Выводить название элемента
+		"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
+		"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
+		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+		"FIELD_CODE" => array(	// Поля
+			0 => "",
+			1 => "",
+		),
+		"FILTER_NAME" => "",	// Фильтр
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+		"IBLOCK_ID" => "1",	// Код информационного блока
+		"IBLOCK_TYPE" => "info",	// Тип информационного блока (используется только для проверки)
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+		"INCLUDE_SUBSECTIONS" => "N",	// Показывать элементы подразделов раздела
+		"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+		"NEWS_COUNT" => "10",	// Количество новостей на странице
+		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
+		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+		"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+		"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+		"PAGER_TITLE" => "Новости",	// Название категорий
+		"PARENT_SECTION" => "",	// ID раздела
+		"PARENT_SECTION_CODE" => "",	// Код раздела
+		"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+		"PROPERTY_CODE" => array(	// Свойства
+			0 => "INFO",
+			1 => "",
+		),
+		"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+		"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+		"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+		"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+		"SET_STATUS_404" => "N",	// Устанавливать статус 404
+		"SET_TITLE" => "N",	// Устанавливать заголовок страницы
+		"SHOW_404" => "N",	// Показ специальной страницы
+		"SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
+		"SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
+		"SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
+		"SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
+		"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?>
 						</div>
 
 					</div>
@@ -937,6 +915,7 @@ $APPLICATION->SetTitle('Главная');
 								<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
 							</svg>
 
+							<div class="form-input-note"></div>
 							<input placeholder="+7 ___ ___ __ __" type="tel" class="input inputmask inputmask--phone" required="required">
 
 						</div>
@@ -944,6 +923,8 @@ $APPLICATION->SetTitle('Главная');
 						<button class="btn btn--red">
 							<span>Перезвонить мне</span>
 						</button>
+						
+						
 
 					</form>
 
@@ -956,31 +937,39 @@ $APPLICATION->SetTitle('Главная');
 
 			<div class="center">
 
+
+
+
+
 				<h1 class="why-we__title h3">
-					Почему выбирают <br>ООО МКК "ПолтинниКъ?
+				
+				
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/index/why-we-header.php"
+	), false
+);?>
+				
 				</h1>
 
 				<div class="why-we__text">
+				
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/includes/index/why-we-text.php"
+	), false
+);?>				
 
-					<p>
-						Срочно нужны деньги, а взять их негде! Знакомая ситуация? И сумма-то необходимая сравнительно невелика, но перехватить <br>не у кого, а до зарплаты еще несколько дней...
-					</p>
-
-					<p>
-						Для решения моментальных финансовых проблем, будь то поломка авто, срочная покупка или другие непредвиденные обстоятельства, существует такой вид займа, как микрозайм.
-					</p>
-
-					<p>
-						На самом деле, микрозайм – это тот же кредит, только оформляемый очень быстро.
-					</p>
-
-					<p>
-						Как правило, на его оформление уходит около двадцати минут. <br>Из документов необходимо предоставить только паспорт и ИНН. <br class="hidden-sm">Работают такие микрозаймы под девизом «Не суетись, перехватись». <br>И действительно, они это делают.
-					</p>
-
-					<p>
-						Компания «ПолтинниКъ» - это способ взять <br class="visible-sm">деньги в долг, быстро <br>и просто. Это займы без залога, без справок и без поручителей.
-					</p>
 
 				</div>
 

@@ -4,10 +4,21 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 use \Bitrix\Main\Page\Asset;
 
-
-$siteUrl = "http://188.225.78.42/";
-
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
+
+
+CJSCore::Init(array("jquery"));
+Asset::getInstance()->addJs( SITE_TEMPLATE_PATH . '/js/addon.js');
+
+
+
+if (CMain::IsHTTPS()) {
+	$siteUrl = "https://".SITE_SERVER_NAME;	
+} else {
+	$siteUrl =  "http://".SITE_SERVER_NAME;	
+}
+
+
 
 	
 
@@ -22,31 +33,28 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
 	<link href="/local/templates/blizfinans/css/styles.css?nc=<?=filectime($_SERVER['DOCUMENT_ROOT'].'/local/templates/blizfinans/css/styles.css')?>" rel="preload" as="style">
 	<link href="/local/templates/blizfinans/js/scripts.js?nc=<?=filectime( $_SERVER['DOCUMENT_ROOT'].'/local/templates/blizfinans/js/scripts.js')?>"  rel="preload" as="script">
 
-	<link href="/local/templates/blizfinans/favicon.png" rel="apple-touch-icon-precomposed">
+	<link href="/local/templates/blizfinans/img/favicon.png" rel="apple-touch-icon-precomposed">
 
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#ffffff">
 
 	<meta property="og:locale" content="ru_RU">
-	<meta property="og:url" content="<?=$siteUrl?>">
+	<meta property="og:url" content="<?=$siteUrl?>/">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="ООО МКК «ПолтинниКъ»">
-	<meta property="og:description" content="Займы онлайн от «ПолтинниКъ»: ✅ нужен только паспорт ✅ одобрение 2 минуты ✅ деньги на карту мгновенно, без отказов ✅ до 80 000 руб. срочно без залогов и поручителей">
+	<meta property="og:title" content="<?$APPLICATION->ShowProperty("og:title");?>">
+	<meta property="og:description" content="<?$APPLICATION->ShowProperty("og:description");?>">
 
-	<meta property="og:site_name" content="БлицФинанс">
-	<meta property="og:image" content="<?=$siteUrl?>og.jpg">
-	<meta property="og:image:secure_url" content="<?=$siteUrl?>og.jpg">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:image" content="<?=$siteUrl?>og-236.png">
-	<meta property="og:image:width" content="236">
-	<meta property="og:image:height" content="236">
+	<meta property="og:site_name" content="<?$APPLICATION->ShowProperty("og:site_name");?>">
+	<meta property="og:image" content="<?=$siteUrl?><?$APPLICATION->ShowProperty("og:image");?>">
+	<meta property="og:image:secure_url" content="<?=$siteUrl?><?$APPLICATION->ShowProperty("og:image");?>">
+	<meta property="og:image:width" content="<?$APPLICATION->ShowProperty("og:image:width");?>">
+	<meta property="og:image:height" content="<?$APPLICATION->ShowProperty("og:image:height");?>">
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:description" content="Займы онлайн от «ПолтинниКъ»: ✅ нужен только паспорт ✅ одобрение 2 минуты ✅ деньги на карту мгновенно, без отказов ✅ до 80 000 руб. срочно без залогов и поручителей">
-	<meta name="twitter:title" content="ООО МКК «ПолтинниКъ»">
-	<meta name="twitter:image" content="<?=$siteUrl?>og.jpg">
+	<meta name="twitter:card" content="<?$APPLICATION->ShowProperty("twitter:card");?>">
+	<meta name="twitter:description" content="<?$APPLICATION->ShowProperty("twitter:description");?>">
+	<meta name="twitter:title" content="<?$APPLICATION->ShowProperty("twitter:title");?>">
+	<meta name="twitter:image" content="<?=$siteUrl?><?$APPLICATION->ShowProperty("twitter:image");?>">
 
 	
 </head>
