@@ -1,6 +1,3 @@
 <?
-$sSectionName = "documents";
-$arDirProperties = Array(
-
-);
-?>
+$sSectionName = 'Документы';
+$arDirProperties = [];

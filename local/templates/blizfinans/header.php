@@ -146,7 +146,8 @@ if (CMain::IsHTTPS()) {
 	</header>
 
 	<main class="main">
-
-
-
-	
+        <? if (!\CSite::InDir(SITE_DIR . 'index.php')): ?>
+            <article class="page">
+                <div class="center">
+                    <h1 class="page__title h2"><? $APPLICATION->ShowTitle(false); ?></h1>
+        <? endif; ?>

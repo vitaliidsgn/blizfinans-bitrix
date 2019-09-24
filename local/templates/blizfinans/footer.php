@@ -2,6 +2,42 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 ?>
+
+<? if (!\CSite::InDir(SITE_DIR . 'index.php')): ?>
+        </div>
+    </article>
+<? endif; ?>
+
+<article class="why-we">
+    <div class="center">
+        <h1 class="why-we__title h3">
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/includes/index/why-we-header.php"
+                ), false
+            ); ?>
+        </h1>
+
+        <div class="why-we__text">
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/includes/index/why-we-text.php"
+                ), false
+            ); ?>
+        </div>
+    </div>
+</article>
+
 </main>
 
 	<footer class="footer">

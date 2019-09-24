@@ -933,53 +933,6 @@ $APPLICATION->SetTitle('Главная');
 			</div>
 
 		</aside>
-		<article class="why-we">
-
-			<div class="center">
-
-
-
-
-
-				<h1 class="why-we__title h3">
-				
-				
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/index/why-we-header.php"
-	), false
-);?>
-				
-				</h1>
-
-				<div class="why-we__text">
-				
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/index/why-we-text.php"
-	), false
-);?>				
-
-
-				</div>
-
-			</div>
-
-		</article>
-
-
-
-	
 	
 	
 <?
