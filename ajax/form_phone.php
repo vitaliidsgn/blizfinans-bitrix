@@ -8,18 +8,13 @@ CModule::IncludeModule("form");
 
 
 $request = Application::getInstance()->getContext()->getRequest();
-$phone = $request->getPost("phone");
+$arPost = $request->getPostList()->toArray();
 
-if ( $phone ) {
 
-	$WEB_FORM_ID = 1;
+if ( $arPost["WEB_FORM_ID"] ) {
 
-	$arValues = array(
-		"form_text_1"	=> $phone
-	);
 	
-	
-	if ($RESULT_ID = CFormResult::Add($WEB_FORM_ID, $arValues))
+	if ($RESULT_ID = CFormResult::Add($arPost["WEB_FORM_ID"], $arPost))
 	{
 		CFormResult::Mail($RESULT_ID);
 		echo "Сообщение успешно отправлено.<br/>Мы перезвоним Вам в ближайшее время";

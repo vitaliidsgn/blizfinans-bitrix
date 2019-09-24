@@ -36,7 +36,7 @@ $this->setFrameMode(true);
 									<figure>
 
 										<picture>
-											<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="">
+											<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"	title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>">
 										</picture>
 
 										<figcaption>

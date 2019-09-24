@@ -437,8 +437,25 @@ $APPLICATION->SetTitle('Главная');
 									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
 								</svg>
 
-								<div class="form-input-note"></div>
-								<input placeholder="+7 ___ ___ __ __" type="tel" class="input inputmask inputmask--phone" required="required">
+<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "phone", Array(
+	"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
+		"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
+		"EDIT_URL" => "result_edit.php",	// Страница редактирования результата
+		"IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
+		"LIST_URL" => "result_list.php",	// Страница со списком результатов
+		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
+		"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
+		"USE_EXTENDED_ERRORS" => "N",	// Использовать расширенный вывод сообщений об ошибках
+		"VARIABLE_ALIASES" => array(
+			"RESULT_ID" => "RESULT_ID",
+			"WEB_FORM_ID" => "WEB_FORM_ID",
+		),
+		"WEB_FORM_ID" => "1",	// ID веб-формы
+	),
+	false
+);?>
 
 							</div>
 							
@@ -915,8 +932,25 @@ $APPLICATION->SetTitle('Главная');
 								<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
 							</svg>
 
-							<div class="form-input-note"></div>
-							<input placeholder="+7 ___ ___ __ __" type="tel" class="input inputmask inputmask--phone" required="required">
+<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "phone", Array(
+	"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
+		"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
+		"EDIT_URL" => "result_edit.php",	// Страница редактирования результата
+		"IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
+		"LIST_URL" => "result_list.php",	// Страница со списком результатов
+		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
+		"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
+		"USE_EXTENDED_ERRORS" => "N",	// Использовать расширенный вывод сообщений об ошибках
+		"VARIABLE_ALIASES" => array(
+			"RESULT_ID" => "RESULT_ID",
+			"WEB_FORM_ID" => "WEB_FORM_ID",
+		),
+		"WEB_FORM_ID" => "1",	// ID веб-формы
+	),
+	false
+);?>
 
 						</div>
 

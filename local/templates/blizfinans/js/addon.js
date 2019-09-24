@@ -13,7 +13,7 @@ $(function () {
 			$this.find(".form-input-note").html("Укажите корректный номер телефона");
 		} else {
 			$this.find(".form-input-note").html("");
-			$.post('/ajax/form_phone.php', {phone: phone}, function( data ) {
+			$.post('/ajax/form_phone.php', $this.serialize(), function( data ) {
 				//console.log( data );
 				$this.find(".form-input-note").html( data );
 				$this.find('input[type="tel"]').val("")
