@@ -1,234 +1,230 @@
 <?
-require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle('Главная');
-?> 
+?>
 
-	<aside class="first-screen">
+    <aside class="first-screen">
 
-			<div class="first-screen__img">
+        <div class="first-screen__img">
 
-				<picture>
+            <picture>
 
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--320@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--320@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--360@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--360@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--414@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--414@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--768@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--768@2x.webp 2x" media="(max-width: 768px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1336@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1336@2x.webp 2x" media="(max-width: 1336px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1440@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1440@2x.webp 2x" media="(max-width: 1400px)" type="image/webp">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1920@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1920@2x.webp 2x" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--320@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--320@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--360@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--360@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--414@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--414@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--768@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--768@2x.webp 2x" media="(max-width: 768px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1336@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1336@2x.webp 2x" media="(max-width: 1336px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1440@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1440@2x.webp 2x" media="(max-width: 1400px)" type="image/webp">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1920@1x.webp 1x, /local/templates/blizfinans/img/first-screen/photo--1920@2x.webp 2x" type="image/webp">
 
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--320@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--320@2x.jpg 2x" media="(max-width: 320px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--360@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--360@2x.jpg 2x" media="(max-width: 360px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--414@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--414@2x.jpg 2x" media="(max-width: 414px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--768@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--768@2x.jpg 2x" media="(max-width: 768px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1336@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1336@2x.jpg 2x" media="(max-width: 1336px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1440@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1440@2x.jpg 2x" media="(max-width: 1400px)">
-					<source srcset="/local/templates/blizfinans/img/first-screen/photo--1920@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1920@2x.jpg 2x">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--320@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--320@2x.jpg 2x" media="(max-width: 320px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--360@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--360@2x.jpg 2x" media="(max-width: 360px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--414@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--414@2x.jpg 2x" media="(max-width: 414px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--768@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--768@2x.jpg 2x" media="(max-width: 768px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1336@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1336@2x.jpg 2x" media="(max-width: 1336px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1440@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1440@2x.jpg 2x" media="(max-width: 1400px)">
+                <source srcset="/local/templates/blizfinans/img/first-screen/photo--1920@1x.jpg 1x, /local/templates/blizfinans/img/first-screen/photo--1920@2x.jpg 2x">
 
-					<img src="/local/templates/blizfinans/img/first-screen/photo--1440@1x.jpg" alt="">
+                <img src="/local/templates/blizfinans/img/first-screen/photo--1440@1x.jpg" alt="">
 
-				</picture>
+            </picture>
 
-			</div>
+        </div>
 
-			<div class="center">
+        <div class="center">
 
-				<h1 class="first-screen__title h1">
-					Деньги в нужное время
-				</h1>
+            <h1 class="first-screen__title h1">
+                Деньги в нужное время
+            </h1>
 
-				<div class="first-screen__calculator">
+            <div class="first-screen__calculator">
 
 
+                <div class="calculator">
 
+                    <form class="calculator__form" action="/" autocomplete="off" novalidate="novalidate">
 
+                        <div class="calculator__param">
 
+                            <script>
 
+                                window.CALCULATOR = {
 
+                                    param: {
 
+                                        sumMin: 1000,
+                                        sumMax: 30000,
+                                        sumStep: 100,
+                                        sumValue: 14000,
 
+                                        dateMin: 1,
+                                        dateMax: 30,
+                                        dateStep: 1,
+                                        dateValue: 15,
 
+                                        stavka: 1,
 
+                                        maxSumFirstLoad: 15000
 
+                                    },
 
+                                    days: ['день', 'дня', 'дней'],
+                                    months: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
+                                    monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
 
+                                    selectLabel: ['Сумма займа', 'Срок займа']
 
-<div class="calculator">
+                                }
 
-	<form class="calculator__form" action="/" autocomplete="off" novalidate="novalidate">
+                            </script>
 
-				<div class="calculator__param">
+                            <input type="hidden" name="LOAN_SUM" class="calculator__param-loan-sum">
+                            <input type="hidden" name="LOAN_TIME" class="calculator__param-loan-time">
 
-					<script>
+                        </div>
 
-						window.CALCULATOR = {
+                        <div class="calculator__control-row">
 
-							param : {
+                            <div class="calculator__control">
 
-								sumMin : 1000,
-								sumMax : 30000,
-								sumStep : 100,
-								sumValue : 14000,
+                                <div class="calculator__control-head">
 
-								dateMin : 1,
-								dateMax : 30,
-								dateStep : 1,
-								dateValue : 15,
+                                    <label for="sum-set" class="calculator__control-label">Сумма займа:</label>
 
-								stavka : 1,
+                                    <div class="calculator__input calculator__input--sum">
 
-								maxSumFirstLoad: 15000
+                                        <input type="tel" class="input" id="sum-set" value="14000" maxlength="6">
 
-							},
+                                        <span class="calculator__input-text calculator__input-text--sum">14000</span>
 
-							days : ['день', 'дня', 'дней'],
-							months : ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
-							monthsShort : ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+                                        <span class="calculator__input-suf calculator__input-suf--sum">руб.</span>
 
-							selectLabel : ['Сумма займа', 'Срок займа']
+                                    </div>
 
-						}
+                                </div>
 
-					</script>
+                                <button type="button" class="calculator__btn-step calculator__btn-step--sum-minus button hide">
+                                    уменьшить сумму на 100 рублей
+                                </button>
 
-					<input type="hidden" name="LOAN_SUM" class="calculator__param-loan-sum">
-					<input type="hidden" name="LOAN_TIME" class="calculator__param-loan-time">
+                                <button type="button" class="calculator__btn-step calculator__btn-step--sum-plus button hide">
+                                    увеличить сумму на 100 рублей
+                                </button>
 
-				</div>
+                                <div class="calculator__slider calculator__slider--sum"></div>
 
-				<div class="calculator__control-row">
+                                <div class="calculator__extreme">
 
-					<div class="calculator__control">
+                                    <span class="calculator__min-sum">1 000</span>
+                                    <span class="calculator__extreme-sum">15 000</span>
+                                    <span class="calculator__max-sum">30 000</span>
 
-						<div class="calculator__control-head">
+                                </div>
 
-							<label for="sum-set" class="calculator__control-label">Сумма займа:</label>
+                                <div class="calculator__max-sum-first-load">
+                                    Сумма свыше 10 000 руб. доступна со второго займа
+                                </div>
 
-							<div class="calculator__input calculator__input--sum">
+                            </div>
 
-								<input type="tel" class="input" id="sum-set" value="14000" maxlength="6">
+                            <div class="calculator__control">
 
-								<span class="calculator__input-text calculator__input-text--sum">14000</span>
+                                <div class="calculator__control-head">
 
-								<span class="calculator__input-suf calculator__input-suf--sum">руб.</span>
+                                    <label for="date-set" class="calculator__control-label">Срок займа:</label>
 
-							</div>
+                                    <div class="calculator__input calculator__input--date">
 
-						</div>
+                                        <input type="tel" class="input" id="date-set" value="15" maxlength="2">
 
-						<button type="button" class="calculator__btn-step calculator__btn-step--sum-minus button hide">уменьшить сумму на 100 рублей</button>
+                                        <span class="calculator__input-text calculator__input-text--date">15</span>
 
-						<button type="button" class="calculator__btn-step calculator__btn-step--sum-plus button hide">увеличить сумму на 100 рублей</button>
+                                        <span class="calculator__input-suf calculator__input-suf--date">дней</span>
 
-						<div class="calculator__slider calculator__slider--sum"></div>
+                                    </div>
 
-						<div class="calculator__extreme">
+                                </div>
 
-							<span class="calculator__min-sum">1 000</span>
-							<span class="calculator__extreme-sum">15 000</span>
-							<span class="calculator__max-sum">30 000</span>
+                                <button type="button" class="calculator__btn-step calculator__btn-step--date-minus button hide">
+                                    уменьшить дату на 1 день
+                                </button>
 
-						</div>
+                                <button type="button" class="calculator__btn-step calculator__btn-step--date-plus button hide">
+                                    увеличить дату на 1 день
+                                </button>
 
-						<div class="calculator__max-sum-first-load">
-							Сумма свыше 10 000 руб. доступна со второго займа
-						</div>
+                                <div class="calculator__slider calculator__slider--date"></div>
 
-					</div>
+                                <div class="calculator__extreme">
 
-					<div class="calculator__control">
+                                    <span class="calculator__min-date">1</span>
+                                    <span class="calculator__extreme-date">15</span>
+                                    <span class="calculator__max-date">30</span>
 
-						<div class="calculator__control-head">
+                                </div>
 
-							<label for="date-set" class="calculator__control-label">Срок займа:</label>
+                            </div>
 
-							<div class="calculator__input calculator__input--date">
+                        </div>
 
-								<input type="tel" class="input" id="date-set" value="15" maxlength="2">
+                        <div class="calculator__foot">
 
-								<span class="calculator__input-text calculator__input-text--date">15</span>
+                            <ul class="calculator__result">
 
-								<span class="calculator__input-suf calculator__input-suf--date">дней</span>
-
-							</div>
-
-						</div>
-
-						<button type="button" class="calculator__btn-step calculator__btn-step--date-minus button hide">уменьшить дату на 1 день</button>
-
-						<button type="button" class="calculator__btn-step calculator__btn-step--date-plus button hide">увеличить дату на 1 день</button>
-
-						<div class="calculator__slider calculator__slider--date"></div>
-
-						<div class="calculator__extreme">
-
-							<span class="calculator__min-date">1</span>
-							<span class="calculator__extreme-date">15</span>
-							<span class="calculator__max-date">30</span>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			<div class="calculator__foot">
-
-				<ul class="calculator__result">
-
-					<li class="calculator__result-item">
-						<span class="calculator__result-name">Сумма займа</span>
-						<span class="calculator__result-value">
+                                <li class="calculator__result-item">
+                                    <span class="calculator__result-name">Сумма займа</span>
+                                    <span class="calculator__result-value">
 							<b class="calculator__sum-text">1 000</b> руб.
 						</span>
-					</li>
+                                </li>
 
-					<li class="calculator__result-item">
-						<span class="calculator__result-name">Дата возврата</span>
-						<span class="calculator__result-value">
+                                <li class="calculator__result-item">
+                                    <span class="calculator__result-name">Дата возврата</span>
+                                    <span class="calculator__result-value">
 							<span class="calculator__date-return"></span>
 						</span>
-					</li>
+                                </li>
 
-					<li class="calculator__result-item">
-						<span class="calculator__result-name">Сумма возврата</span>
-						<span class="calculator__result-value">
+                                <li class="calculator__result-item">
+                                    <span class="calculator__result-name">Сумма возврата</span>
+                                    <span class="calculator__result-value">
 							<b class="calculator__sum-return">16 100 </b> руб.
 						</span>
-					</li>
+                                </li>
 
-				</ul>
+                            </ul>
 
-				<button class="calculator__submit btn btn--red">
-					<span>Получить деньги</span>
-				</button>
+                            <button class="calculator__submit btn btn--red">
+                                <span>Получить деньги</span>
+                            </button>
 
-			</div>
+                        </div>
 
-	</form>
+                    </form>
 
-</div>
+                </div>
 
-				</div>
+            </div>
 
-			</div>
+        </div>
 
-		</aside>
-		<aside class="it-we">
+    </aside>
 
-			<div class="center">
+    <aside class="it-we">
 
-				<h2 class="it-we__title h2">
-					Всего 4 шага
-				</h2>
+        <div class="center">
 
-				<p class="it-we__intro">
-					Индивидуальный подход к каждому клиенту.
-				</p>
+            <h2 class="it-we__title h2">
+                Всего 4 шага
+            </h2>
 
-				<ul class="it-we__list">
+            <p class="it-we__intro">
+                Индивидуальный подход к каждому клиенту.
+            </p>
 
-					<li class="it-we__item">
+            <ul class="it-we__list">
+
+                <li class="it-we__item">
 						<span class="it-we__ico">
 							<svg width="80" height="80" viewBox="0 0 80 80">
 								<path fill="#5DCAD9" d="M73.333 0H6.667C3.18 0 .255 2.89 0 6.667v34.666a1.334 1.334 0 0 0 2.667 0L2.664 6.757c.137-2.01 1.672-4.09 4.003-4.09h66.666c2.206 0 4 1.794 4 4v48c0 2.28-1.718 4-4 4H6.667c-2.28 0-4-1.72-4-4V48h70.666a1.333 1.333 0 0 0 1.281-1.7c-2.697-9.444-7.575-16.381-7.714-16.567-.495-.857-1.37-1.51-2.397-1.793-1.044-.29-2.144-.163-3.019.341a3.851 3.851 0 0 0-1.085.946 4.82 4.82 0 0 0-2.312-1.398 4.801 4.801 0 0 0-3.672.484 4.792 4.792 0 0 0-1.944 2.091 4.823 4.823 0 0 0-1.338-.584 4.813 4.813 0 0 0-3.674.484 4.812 4.812 0 0 0-1.863 1.93l-7.97-11.086c-2.52-3.44-5.111-2.475-6.107-1.899-1.136.656-1.887 1.704-2.115 2.951-.205 1.13.035 2.363.695 3.505l10.096 16.33a1.335 1.335 0 0 0 2.27-1.403L32.387 24.337c-.325-.561-.452-1.15-.36-1.66.087-.477.364-.853.824-1.118.37-.215 1.243-.718 2.615 1.154l10.29 14.315a1.333 1.333 0 0 0 2.239-1.444 2.159 2.159 0 0 1-.217-1.65c.15-.562.51-1.031 1.013-1.322a2.164 2.164 0 0 1 1.65-.217c.562.15 1.03.51 1.32 1.013l.877 1.519v.001a1.335 1.335 0 0 0 2.31-1.333l-.001-.003a2.159 2.159 0 0 1-.216-1.648c.15-.561.51-1.03 1.015-1.321a2.172 2.172 0 0 1 1.65-.218c.562.151 1.03.511 1.322 1.014l1.314 2.278a1.335 1.335 0 0 0 2.311-1.333v-.001a1.287 1.287 0 0 1-.107-.98 1.3 1.3 0 0 1 .58-.791c.264-.152.619-.181.978-.081.353.097.65.304.861.66.045.064 4.233 6.03 6.875 14.162H1.333c-.736 0-1.333.598-1.333 1.334v8c0 3.738 2.928 6.666 6.667 6.666h66.666c3.739 0 6.667-2.928 6.667-6.666v-48A6.674 6.674 0 0 0 73.333 0"/>
@@ -236,12 +232,12 @@ $APPLICATION->SetTitle('Главная');
 								<path fill="#D10808" fill-rule="nonzero" d="M26.733 27.381l-3.77 3.77a1.332 1.332 0 0 0 .942 2.276c.342 0 .682-.13.943-.391l3.77-3.77a1.334 1.334 0 0 0-1.885-1.885m-8.066-4.714c0 .736.597 1.333 1.333 1.333h5.332a1.333 1.333 0 1 0 0-2.667H20c-.736 0-1.333.598-1.333 1.334m9.952-6.599l-3.771-3.772a1.334 1.334 0 0 0-1.885 1.885l3.77 3.772a1.33 1.33 0 0 0 1.886 0c.52-.52.52-1.365 0-1.885m15.084-1.885a1.332 1.332 0 0 0 0-1.886 1.332 1.332 0 0 0-1.886 0l-3.772 3.771a1.334 1.334 0 0 0 1.886 1.885l3.772-3.77zm-9.038.484V9.333a1.334 1.334 0 0 0-2.666 0v5.334a1.334 1.334 0 0 0 2.666 0"/>
 							</svg>
 						</span>
-						<span class="it-we__text">
+                    <span class="it-we__text">
 							Определите нужную сумму и срок займа
 						</span>
-					</li>
+                </li>
 
-					<li class="it-we__item">
+                <li class="it-we__item">
 						<span class="it-we__ico">
 							<svg width="68" height="73" viewBox="0 0 68 73">
 								<defs>
@@ -276,12 +272,12 @@ $APPLICATION->SetTitle('Главная');
 								</g>
 							</svg>
 						</span>
-						<span class="it-we__text">
+                    <span class="it-we__text">
 							Заполните анкету
 						</span>
-					</li>
+                </li>
 
-					<li class="it-we__item">
+                <li class="it-we__item">
 						<span class="it-we__ico">
 							<svg width="73" height="73" viewBox="0 0 73 73">
 								<defs>
@@ -320,12 +316,12 @@ $APPLICATION->SetTitle('Главная');
 								</g>
 							</svg>
 						</span>
-						<span class="it-we__text">
+                    <span class="it-we__text">
 							Получите одобрение заявки
 						</span>
-					</li>
+                </li>
 
-					<li class="it-we__item">
+                <li class="it-we__item">
 						<span class="it-we__ico">
 							<svg width="75" height="68" viewBox="0 0 75 68">
 								<defs>
@@ -345,612 +341,502 @@ $APPLICATION->SetTitle('Главная');
 								</g>
 							</svg>
 						</span>
-						<span class="it-we__text">
+                    <span class="it-we__text">
 							Деньги у вас <br>в кармане
 						</span>
-					</li>
+                </li>
 
-				</ul>
+            </ul>
 
-			</div>
+        </div>
 
-		</aside>
-		<article class="loan-in-lk">
+    </aside>
 
-			<div class="center">
+    <article class="loan-in-lk">
 
-				<div class="loan-in-lk__content">
+        <div class="center">
 
-					<h1 class="loan-in-lk__title h2">
-						Отправьте заявку <br>в личном кабинете
-					</h1>
+            <div class="loan-in-lk__content">
 
-					<p class="loan-in-lk__intro">
-						Получите деньги уже через несколько минут!
-					</p>
+                <h1 class="loan-in-lk__title h2">
+                    Отправьте заявку <br>в личном кабинете
+                </h1>
 
-					<div class="loan-in-lk__btn">
+                <p class="loan-in-lk__intro">
+                    Получите деньги уже через несколько минут!
+                </p>
 
-						<a href="/" class="btn btn--red">
-							<span>Получить деньги</span>
-						</a>
+                <div class="loan-in-lk__btn">
 
-					</div>
+                    <a href="/" class="btn btn--red">
+                        <span>Получить деньги</span>
+                    </a>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-			<div class="loan-in-lk__bg">
+        </div>
 
-				<picture>
+        <div class="loan-in-lk__bg">
 
-					<source srcset="/local/templates/blizfinans/img/loan-in-lk/img.webp 1x, /local/templates/blizfinans/img/loan-in-lk/img@2x.webp 2x" type="image/webp">
+            <picture>
 
-					<source srcset="/local/templates/blizfinans/img/loan-in-lk/img.png 1x, /local/templates/blizfinans/img/loan-in-lk/img@2x.png 2x">
+                <source srcset="/local/templates/blizfinans/img/loan-in-lk/img.webp 1x, /local/templates/blizfinans/img/loan-in-lk/img@2x.webp 2x" type="image/webp">
 
-					<img src="/local/templates/blizfinans/img/loan-in-lk/img.png" alt="">
+                <source srcset="/local/templates/blizfinans/img/loan-in-lk/img.png 1x, /local/templates/blizfinans/img/loan-in-lk/img@2x.png 2x">
 
-				</picture>
+                <img src="/local/templates/blizfinans/img/loan-in-lk/img.png" alt="">
 
-			</div>
+            </picture>
 
-		</article>
-		<article class="loan-in-phone">
+        </div>
 
-			<div class="center">
+    </article>
 
-				<div class="loan-in-phone__box">
+<? $APPLICATION->IncludeComponent(
+    "bitrix:form.result.new",
+    "loan",
+    array(
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHAIN_ITEM_LINK" => "",
+        "CHAIN_ITEM_TEXT" => "",
+        "EDIT_URL" => "result_edit.php",
+        "IGNORE_CUSTOM_TEMPLATE" => "N",
+        "LIST_URL" => "result_list.php",
+        "SEF_MODE" => "N",
+        "SUCCESS_URL" => "",
+        "USE_EXTENDED_ERRORS" => "N",
+        "VARIABLE_ALIASES" => array(
+            "RESULT_ID" => "RESULT_ID",
+            "WEB_FORM_ID" => "WEB_FORM_ID",
+        ),
+        "WEB_FORM_ID" => "1"
+    ),
+    false
+); ?>
 
-					<div class="loan-in-phone__img">
+    <article class="loan-in-office">
 
-						<svg width="532" height="254" viewBox="0 0 532 254">
-							<defs>
-								<linearGradient id="loan-in-phone__bg" x1="50%" x2="50%" y1="0%" y2="100%">
-									<stop offset="0%" stop-color="#D10808"/>
-									<stop offset="100%" stop-color="#A41212"/>
-								</linearGradient>
-							</defs>
-							<path fill="url(#loan-in-phone__bg)" fill-rule="evenodd" d="M239 657h422c5.523 0 10 4.477 10 10v244H139V757c0-55.228 44.772-100 100-100z" transform="matrix(-1 0 0 1 671 -657)"/>
-						</svg>
+        <div class="center">
 
-						<img src="/local/templates/blizfinans/img/loan-in-phone/phone.svg" alt="">
+            <div class="loan-in-office__content">
 
-					</div>
+                <h1 class="loan-in-office__title h2">
+                    Оформите займ в ближайшем офисе
+                </h1>
 
-					<div class="loan-in-phone__content">
+                <p class="loan-in-office__intro">
+                    Для оформления займа выберите один из офисов <br>в Вашем регионе
+                </p>
 
-						<h1 class="loan-in-phone__title h2">
-							Оформите займ по&nbsp;телефону <br>
-							<a href="tel:88007006202">8 800 700 62 02</a>
-						</h1>
+                <ul class="loan-in-office__list">
 
-						<p class="loan-in-phone__intro">
-							Просто назовите нам свои данные, желаемую сумму займа и&nbsp;получите деньги на карту в течение нескольких минут (при&nbsp;активации услуги в салоне «Блиц-Финанс»).
-						</p>
+                    <li>
+                        <a href="/">Удмуртская республика</a>
+                    </li>
+                    <li>
+                        <a href="/">Пермский край</a>
+                    </li>
+                    <li>
+                        <a href="/">Республика Башкоркастан</a>
+                    </li>
+                    <li>
+                        <a href="/">Республика Татарстан</a>
+                    </li>
+                    <li>
+                        <a href="/">Кировская область</a>
+                    </li>
+                    <li>
+                        <a href="/">Республика Крым</a>
+                    </li>
 
-						<form action="/" class="loan-in-phone__form" novalidate="novalidate">
+                </ul>
 
-							<div class="loan-in-phone__form-input">
+                <div class="loan-in-office__foot">
 
-								<svg class="icon-flag-russia">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
-								</svg>
+                    <a href="/office/" class="btn btn--red">
+                        <span>Адреса офисов</span>
+                    </a>
 
-<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "phone", Array(
-	"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
-		"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
-		"EDIT_URL" => "result_edit.php",	// Страница редактирования результата
-		"IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
-		"LIST_URL" => "result_list.php",	// Страница со списком результатов
-		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
-		"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
-		"USE_EXTENDED_ERRORS" => "N",	// Использовать расширенный вывод сообщений об ошибках
-		"VARIABLE_ALIASES" => array(
-			"RESULT_ID" => "RESULT_ID",
-			"WEB_FORM_ID" => "WEB_FORM_ID",
-		),
-		"WEB_FORM_ID" => "1",	// ID веб-формы
-	),
-	false
-);?>
+                    <a href="/" class="loan-in-office__info">
+                        Не нашли подходящего офиса?
+                    </a>
 
-							</div>
-							
-							<button class="btn btn--red">
-								<span>Перезвонить мне</span>
-							</button>
-							
+                </div>
 
-						</form>
+            </div>
 
-					</div>
+        </div>
 
-				</div>
+        <div class="loan-in-office__bg">
 
-			</div>
+            <picture>
 
-		</article>
-		<article class="loan-in-office">
+                <source srcset="/local/templates/blizfinans/img/loan-in-office/img--mobile.svg" media="(max-width: 1199px)">
+                <source srcset="/local/templates/blizfinans/img/loan-in-office/img.svg">
 
-			<div class="center">
+                <img src="/local/templates/blizfinans/img/loan-in-office/img.svg" alt="">
 
-				<div class="loan-in-office__content">
+            </picture>
 
-					<h1 class="loan-in-office__title h2">
-						Оформите займ в ближайшем офисе
-					</h1>
+        </div>
 
-					<p class="loan-in-office__intro">
-						Для оформления займа выберите один из офисов <br>в Вашем регионе
-					</p>
+    </article>
 
-					<ul class="loan-in-office__list">
+<? $APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    array(
+        "AREA_FILE_SHOW" => "file",
+        "AREA_FILE_SUFFIX" => "",
+        "EDIT_TEMPLATE" => "",
+        "PATH" => "/includes/timer.php"
+    ), false
+); ?>
 
-						<li>
-							<a href="/">Удмуртская республика</a>
-						</li>
-						<li>
-							<a href="/">Пермский край</a>
-						</li>
-						<li>
-							<a href="/">Республика Башкоркастан</a>
-						</li>
-						<li>
-							<a href="/">Республика Татарстан</a>
-						</li>
-						<li>
-							<a href="/">Кировская область</a>
-						</li>
-						<li>
-							<a href="/">Республика Крым</a>
-						</li>
+    <section class="faq">
 
-					</ul>
+        <div class="center">
 
-					<div class="loan-in-office__foot">
+            <h2 class="faq__title h2">
+                Погашение займа
+            </h2>
 
-						<a href="/office/" class="btn btn--red">
-							<span>Адреса офисов</span>
-						</a>
+            <div class="faq__box swiper-container swiper-container--faq">
 
-						<a href="/" class="loan-in-office__info">
-							Не нашли подходящего офиса?
-						</a>
+                <ul class="faq__nav hidden-sm">
 
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="loan-in-office__bg">
-
-				<picture>
-
-					<source srcset="/local/templates/blizfinans/img/loan-in-office/img--mobile.svg" media="(max-width: 1199px)">
-					<source srcset="/local/templates/blizfinans/img/loan-in-office/img.svg">
-
-					<img src="/local/templates/blizfinans/img/loan-in-office/img.svg" alt="">
-
-				</picture>
-
-			</div>
-
-		</article>
-
-
-        <? $APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/includes/timer.php"
-            ), false
-        ); ?>
-
-		<section class="faq">
-
-			<div class="center">
-
-				<h2 class="faq__title h2">
-					Погашение займа
-				</h2>
-
-				<div class="faq__box swiper-container swiper-container--faq">
-
-					<ul class="faq__nav hidden-sm">
-
-						<li class="faq__nav-item">
-							<a href="#faq-1" class="faq__nav-link faq__nav-link--active">
+                    <li class="faq__nav-item">
+                        <a href="#faq-1" class="faq__nav-link faq__nav-link--active">
 								<span class="faq__nav-ico">
 									<svg width="42" height="40" viewBox="0 0 42 40">
 										<path d="M40.6 28.7c0 1.02-1.08 2.1-2.1 2.1h-35c-1.02 0-2.1-1.08-2.1-2.1V3.5c0-1.02 1.08-2.1 2.1-2.1h35c1.02 0 2.1 1.08 2.1 2.1v25.2zM38.5 0h-35C1.701 0 0 1.701 0 3.5v25.2c0 1.799 1.701 3.5 3.5 3.5h35c1.799 0 3.5-1.701 3.5-3.5V3.5C42 1.701 40.299 0 38.5 0zM28.205 8.195a.7.7 0 1 1 .99-.99l5.6 5.6a.7.7 0 1 1-.99.99l-5.6-5.6zM21.721 28.7a.7.7 0 0 1-.7.7.703.703 0 0 1-.704-.7c0-.386.31-.7.697-.7h.007a.7.7 0 0 1 .7.7zM32.405 8.195a.7.7 0 1 1 .99-.99l1.4 1.4a.7.7 0 1 1-.99.99l-1.4-1.4zM30.8 38.5a.7.7 0 0 1-.7.7H11.9a.7.7 0 0 1 0-1.4h4.9v-3.5a.7.7 0 0 1 1.4 0v3.5h5.6v-3.5a.7.7 0 0 1 1.4 0v3.5h4.9a.7.7 0 0 1 .7.7zm7-13.3H4.2v-21h33.6v21zm.7-22.4h-35a.7.7 0 0 0-.7.7v22.4a.7.7 0 0 0 .7.7h35a.7.7 0 0 0 .7-.7V3.5a.7.7 0 0 0-.7-.7z"/>
 									</svg>
 								</span>
-								Погашение онлайн
-							</a>
-						</li>
+                            Погашение онлайн
+                        </a>
+                    </li>
 
-						<li class="faq__nav-item">
-							<a href="#faq-2" class="faq__nav-link">
+                    <li class="faq__nav-item">
+                        <a href="#faq-2" class="faq__nav-link">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M13.78 15.426a.7.7 0 0 0-.863.483 8.41 8.41 0 0 0-.317 2.29c0 4.633 3.768 8.4 8.4 8.4 4.632 0 8.4-3.767 8.4-8.4 0-.776-.107-1.547-.317-2.289a.7.7 0 0 0-1.347.38A7.007 7.007 0 0 1 21 25.2a7.008 7.008 0 0 1-6.736-8.909.7.7 0 0 0-.482-.864zM18.9 16.8a.7.7 0 1 0 0-1.4c-1.301 0-2.388.896-2.7 2.1h-.1a.7.7 0 0 0 0 1.4h.099a2.797 2.797 0 0 0 2.7 2.1c1.546 0 2.8-1.256 2.8-2.8 0-.772.63-1.4 1.4-1.4.773 0 1.4.628 1.4 1.4 0 .772-.627 1.4-1.4 1.4a.7.7 0 0 0 0 1.4 2.797 2.797 0 0 0 2.702-2.1h.099a.7.7 0 1 0 0-1.4h-.1a2.798 2.798 0 0 0-2.701-2.1 2.803 2.803 0 0 0-2.8 2.8c0 .772-.628 1.4-1.4 1.4-.772 0-1.4-.628-1.4-1.4 0-.772.628-1.4 1.4-1.4zM31.5 6.3a.7.7 0 1 0 0-1.4h-7a.7.7 0 0 0 0 1.4h7zm6.3-.7c0-.772-.628-1.4-1.4-1.4-.772 0-1.4.628-1.4 1.4 0 .772.628 1.4 1.4 1.4.772 0 1.4-.628 1.4-1.4zM9.1 15.4a.7.7 0 0 0-.7.7v18.2a.7.7 0 0 0 .7.7c1.93 0 3.5 1.57 3.5 3.5a.7.7 0 0 0 .7.7h15.4a.7.7 0 0 0 .7-.7c0-1.93 1.57-3.5 3.5-3.5a.7.7 0 0 0 .7-.7V16.1a.7.7 0 1 0-1.4 0v17.55a4.91 4.91 0 0 0-4.15 4.15h-14.1a4.91 4.91 0 0 0-4.15-4.15V16.1a.7.7 0 0 0-.7-.7zm28.7.7a.7.7 0 1 0 1.4 0v-5.6a.7.7 0 0 0-.7-.7h-35a.7.7 0 0 0-.7.7v5.6a.7.7 0 1 0 1.4 0v-4.9h33.6v4.9zM38.5 0h-35C1.57 0 0 1.57 0 3.5v15.4c0 1.93 1.57 3.5 3.5 3.5a.7.7 0 1 0 0-1.4c-1.158 0-2.1-.942-2.1-2.1V3.5c0-1.158.942-2.1 2.1-2.1h35c1.158 0 2.1.942 2.1 2.1v15.4c0 1.158-.942 2.1-2.1 2.1a.7.7 0 0 0 0 1.4c1.93 0 3.5-1.57 3.5-3.5V3.5C42 1.57 40.43 0 38.5 0zm-2.1 13.3v25.2c0 1.93-1.57 3.5-3.5 3.5H9.1c-1.93 0-3.5-1.57-3.5-3.5V13.3a.7.7 0 0 1 .7-.7h26.6a.7.7 0 1 1 0 1.4H7v24.5c0 1.158.942 2.1 2.1 2.1h23.8c1.158 0 2.1-.942 2.1-2.1V13.3a.7.7 0 0 1 1.4 0z"/>
 									</svg>
 								</span>
-								Через терминалы и&nbsp;банкоматы
-							</a>
-						</li>
+                            Через терминалы и&nbsp;банкоматы
+                        </a>
+                    </li>
 
-						<li class="faq__nav-item">
-							<a href="#faq-3" class="faq__nav-link">
+                    <li class="faq__nav-item">
+                        <a href="#faq-3" class="faq__nav-link">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M42 41.3a.7.7 0 0 1-.7.7H.7a.7.7 0 0 1 0-1.4h40.6a.7.7 0 0 1 .7.7zM4.9 18.2a.7.7 0 0 0 .7-.7V7h30.8v10.5a.7.7 0 0 0 1.4 0V6.3a.7.7 0 0 0-.7-.7H21V1.4h3.5v1.4h-2.1a.7.7 0 0 0 0 1.4h2.8a.7.7 0 0 0 .7-.7V.7a.7.7 0 0 0-.7-.7h-4.9a.7.7 0 0 0-.7.7v4.9H4.9a.7.7 0 0 0-.7.7v11.2a.7.7 0 0 0 .7.7zm7.7 20.3a.7.7 0 0 0 .7.7h15.4a.7.7 0 0 0 0-1.4H13.3a.7.7 0 0 0-.7.7zm-8.4-.7V21h-.7a.7.7 0 0 1 0-1.4h35a.7.7 0 0 1 0 1.4h-.7v16.8h.7a.7.7 0 0 1 0 1.4h-7a.7.7 0 0 1 0-1.4h.7V21H9.8v16.8h.7a.7.7 0 0 1 0 1.4h-7a.7.7 0 0 1 0-1.4h.7zm29.4 0h2.8V21h-2.8v16.8zm-28 0h2.8V21H5.6v16.8zm20.3-1.4a.7.7 0 0 0 .7-.7v-9.8a.698.698 0 0 0-.205-.495C26.329 25.34 24.746 23.8 21 23.8c-3.746 0-5.33 1.54-5.395 1.605a.698.698 0 0 0-.205.495v9.8a.7.7 0 0 0 1.4 0v-9.461c.428-.294 1.538-.893 3.5-1.013V32.2a.7.7 0 0 0 0 1.4v2.1a.7.7 0 0 0 1.4 0v-2.1a.7.7 0 0 0 0-1.4v-6.974c1.966.121 3.076.72 3.5 1.012V35.7a.7.7 0 0 0 .7.7zm-14-26.6a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7H9.1a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM9.8 14h1.4v-2.8H9.8V14zm23.1-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM30.8 14h1.4v-2.8h-1.4V14zm-4.9-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM23.8 14h1.4v-2.8h-1.4V14zm-4.9-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM16.8 14h1.4v-2.8h-1.4V14z"/>
 									</svg>
 								</span>
-								В офисах компании
-							</a>
-						</li>
+                            В офисах компании
+                        </a>
+                    </li>
 
-						<li class="faq__nav-item">
-							<a href="#faq-4" class="faq__nav-link">
+                    <li class="faq__nav-item">
+                        <a href="#faq-4" class="faq__nav-link">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M17.5 35h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm0-4.2h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm0-4.2h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm3.5 7a.7.7 0 0 0 0 1.4h5.6a.7.7 0 1 0 0-1.4H21zm7-3.5a.7.7 0 0 0-.7-.7H21a.7.7 0 0 0 0 1.4h6.3a.7.7 0 0 0 .7-.7zm4.9-14.7a.7.7 0 1 0 0-1.4h-4.2a.7.7 0 1 0 0 1.4h4.2zm-15.4 0h8.4a.7.7 0 1 0 0-1.4h-8.4a.7.7 0 0 0 0 1.4zM21 26.6h4.9a.7.7 0 1 0 0-1.4H21a.7.7 0 0 0 0 1.4zm-3.5-7h18.2a.7.7 0 1 0 0-1.4H17.5a.7.7 0 0 0 0 1.4zm15.363 12.042h2.01v.865h-2.01v2.143h-1.207v-2.143H30.45v-.865h1.206v-.839H30.45v-.865h1.206v-4.472c.6-.177 1.314-.266 2.145-.266.733 0 1.311.087 1.736.26.424.173.733.46.925.865.192.403.288.96.288 1.67 0 .719-.09 1.287-.268 1.704-.179.417-.454.714-.824.891-.371.178-.856.267-1.455.267-.196 0-.424-.014-.683-.04a7.252 7.252 0 0 1-.657-.093v.918zm0-1.717h.938c.42 0 .755-.058 1.005-.173.25-.115.436-.313.557-.592.12-.28.18-.668.18-1.165s-.06-.885-.18-1.165a1.102 1.102 0 0 0-.557-.592c-.25-.115-.585-.173-1.005-.173h-.938v3.86zM42 9.1v32.2a.7.7 0 0 1-.7.7H11.9a.7.7 0 0 1-.7-.7v-4.9H7.7a.7.7 0 0 1 0-1.4h3.5V9.1c0-1.158-.942-2.1-2.1-2.1C7.942 7 7 7.942 7 9.1v23.8c0 1.93-1.57 3.5-3.5 3.5S0 34.83 0 32.9V.7A.7.7 0 0 1 .7 0h29.4a.7.7 0 0 1 .7.7v2.8a.7.7 0 1 1-1.4 0V1.4h-28v31.5c0 1.158.942 2.1 2.1 2.1 1.158 0 2.1-.942 2.1-2.1V9.1c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5v31.5h28V9.1c0-1.158-.942-2.1-2.1-2.1H14a.7.7 0 0 1 0-1.4h24.5c1.93 0 3.5 1.57 3.5 3.5z"/>
 									</svg>
 								</span>
-								Другие варианты
-							</a>
-						</li>
+                            Другие варианты
+                        </a>
+                    </li>
 
-					</ul>
+                </ul>
 
-					<div class="faq__body swiper-wrapper">
+                <div class="faq__body swiper-wrapper">
 
 
+                    <div id="faq-1" class="faq__block swiper-slide">
 
-						<div id="faq-1" class="faq__block swiper-slide">
-
-							<h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
+                        <h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
 								<span class="faq__nav-ico">
 									<svg width="42" height="40" viewBox="0 0 42 40">
 										<path d="M40.6 28.7c0 1.02-1.08 2.1-2.1 2.1h-35c-1.02 0-2.1-1.08-2.1-2.1V3.5c0-1.02 1.08-2.1 2.1-2.1h35c1.02 0 2.1 1.08 2.1 2.1v25.2zM38.5 0h-35C1.701 0 0 1.701 0 3.5v25.2c0 1.799 1.701 3.5 3.5 3.5h35c1.799 0 3.5-1.701 3.5-3.5V3.5C42 1.701 40.299 0 38.5 0zM28.205 8.195a.7.7 0 1 1 .99-.99l5.6 5.6a.7.7 0 1 1-.99.99l-5.6-5.6zM21.721 28.7a.7.7 0 0 1-.7.7.703.703 0 0 1-.704-.7c0-.386.31-.7.697-.7h.007a.7.7 0 0 1 .7.7zM32.405 8.195a.7.7 0 1 1 .99-.99l1.4 1.4a.7.7 0 1 1-.99.99l-1.4-1.4zM30.8 38.5a.7.7 0 0 1-.7.7H11.9a.7.7 0 0 1 0-1.4h4.9v-3.5a.7.7 0 0 1 1.4 0v3.5h5.6v-3.5a.7.7 0 0 1 1.4 0v3.5h4.9a.7.7 0 0 1 .7.7zm7-13.3H4.2v-21h33.6v21zm.7-22.4h-35a.7.7 0 0 0-.7.7v22.4a.7.7 0 0 0 .7.7h35a.7.7 0 0 0 .7-.7V3.5a.7.7 0 0 0-.7-.7z"/>
 									</svg>
 								</span>
-								Погашение онлайн
-							</h3>
+                            Погашение онлайн
+                        </h3>
 
 
+                        <article class="faq__item">
 
-							<article class="faq__item">
+                            <h4 class="faq__question h4">
+                                Погашение онлайн
+                            </h4>
 
-								<h4 class="faq__question h4">
-									Погашение онлайн
-								</h4>
+                            <div class="faq__answer">
 
-								<div class="faq__answer">
+                                <p>Чтобы воспользоваться услугой погашения займа с помощью Личного кабинета на сайте,
+                                    необходимо ввести свои личные данные и мобильный телефон, указанный при оформлении
+                                    договора и провести оплату со своей банковской карты.</p>
+                                <p>В данном случае взимается комиссия 2,5% от суммы платежа и средства зачисляются в
+                                    считанные минуты. В случае возникновения любых вопросов</p>
 
-									<p>Чтобы воспользоваться услугой погашения займа с помощью Личного кабинета на сайте, необходимо ввести свои личные данные и мобильный телефон, указанный при оформлении договора и провести оплату со своей банковской карты.</p> <p>В данном случае взимается комиссия 2,5% от суммы платежа и средства зачисляются в считанные минуты. В случае возникновения любых вопросов</p>
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
 
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
+                            </div>
 
-								</div>
-
-							</article>
-
-
-
-							<article class="faq__item">
-
-								<h4 class="faq__question h4">
-									На сайте сервиса «Золотая корона-погашение кредитов»
-								</h4>
-
-								<div class="faq__answer">
-
-									<p>С помощью этого сервиса вы можете погасить или оплатить займ без комиссии с мгновенным зачислением средств на счет. В поле "Номер договора" при оплате микрозайма, по которому должен быть совершен платеж необходимо ввести 10 цифр серии и номера паспорта заемщика. За дополнительной информацией о возможностях сервиса вы можете обратиться в Информационный центр по телефону 8-495-211-07-00 (круглосуточно)</p>
-
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
-
-								</div>
-
-							</article>
+                        </article>
 
 
+                        <article class="faq__item">
 
-							<article class="faq__item">
+                            <h4 class="faq__question h4">
+                                На сайте сервиса «Золотая корона-погашение кредитов»
+                            </h4>
 
-								<h4 class="faq__question h4">
-									На сайте ПАО СБЕРБАНК
-								</h4>
+                            <div class="faq__answer">
 
-								<div class="faq__answer">
+                                <p>С помощью этого сервиса вы можете погасить или оплатить займ без комиссии с
+                                    мгновенным зачислением средств на счет. В поле "Номер договора" при оплате
+                                    микрозайма, по которому должен быть совершен платеж необходимо ввести 10 цифр серии
+                                    и номера паспорта заемщика. За дополнительной информацией о возможностях сервиса вы
+                                    можете обратиться в Информационный центр по телефону 8-495-211-07-00
+                                    (круглосуточно)</p>
 
-									<p>При наличии карты ПАО СБЕРБАНК вы можете зарегистрироваться на сайте банка и через ваш личный кабинет погашать или оплачивать займы ООО «МФК «Деньгимигом»  с комиссией 1% от суммы платежа. Зачисление оплаты происходит в течение 1-3 рабочих дней после внесения средств.</p>
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
 
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
+                            </div>
 
-								</div>
-
-							</article>
+                        </article>
 
 
+                        <article class="faq__item">
 
-						</div>
+                            <h4 class="faq__question h4">
+                                На сайте ПАО СБЕРБАНК
+                            </h4>
 
-						<div id="faq-2" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
+                            <div class="faq__answer">
 
-							<h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
+                                <p>При наличии карты ПАО СБЕРБАНК вы можете зарегистрироваться на сайте банка и через
+                                    ваш личный кабинет погашать или оплачивать займы ООО «МФК «Деньгимигом» с комиссией
+                                    1% от суммы платежа. Зачисление оплаты происходит в течение 1-3 рабочих дней после
+                                    внесения средств.</p>
+
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                    <div id="faq-2" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
+
+                        <h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M13.78 15.426a.7.7 0 0 0-.863.483 8.41 8.41 0 0 0-.317 2.29c0 4.633 3.768 8.4 8.4 8.4 4.632 0 8.4-3.767 8.4-8.4 0-.776-.107-1.547-.317-2.289a.7.7 0 0 0-1.347.38A7.007 7.007 0 0 1 21 25.2a7.008 7.008 0 0 1-6.736-8.909.7.7 0 0 0-.482-.864zM18.9 16.8a.7.7 0 1 0 0-1.4c-1.301 0-2.388.896-2.7 2.1h-.1a.7.7 0 0 0 0 1.4h.099a2.797 2.797 0 0 0 2.7 2.1c1.546 0 2.8-1.256 2.8-2.8 0-.772.63-1.4 1.4-1.4.773 0 1.4.628 1.4 1.4 0 .772-.627 1.4-1.4 1.4a.7.7 0 0 0 0 1.4 2.797 2.797 0 0 0 2.702-2.1h.099a.7.7 0 1 0 0-1.4h-.1a2.798 2.798 0 0 0-2.701-2.1 2.803 2.803 0 0 0-2.8 2.8c0 .772-.628 1.4-1.4 1.4-.772 0-1.4-.628-1.4-1.4 0-.772.628-1.4 1.4-1.4zM31.5 6.3a.7.7 0 1 0 0-1.4h-7a.7.7 0 0 0 0 1.4h7zm6.3-.7c0-.772-.628-1.4-1.4-1.4-.772 0-1.4.628-1.4 1.4 0 .772.628 1.4 1.4 1.4.772 0 1.4-.628 1.4-1.4zM9.1 15.4a.7.7 0 0 0-.7.7v18.2a.7.7 0 0 0 .7.7c1.93 0 3.5 1.57 3.5 3.5a.7.7 0 0 0 .7.7h15.4a.7.7 0 0 0 .7-.7c0-1.93 1.57-3.5 3.5-3.5a.7.7 0 0 0 .7-.7V16.1a.7.7 0 1 0-1.4 0v17.55a4.91 4.91 0 0 0-4.15 4.15h-14.1a4.91 4.91 0 0 0-4.15-4.15V16.1a.7.7 0 0 0-.7-.7zm28.7.7a.7.7 0 1 0 1.4 0v-5.6a.7.7 0 0 0-.7-.7h-35a.7.7 0 0 0-.7.7v5.6a.7.7 0 1 0 1.4 0v-4.9h33.6v4.9zM38.5 0h-35C1.57 0 0 1.57 0 3.5v15.4c0 1.93 1.57 3.5 3.5 3.5a.7.7 0 1 0 0-1.4c-1.158 0-2.1-.942-2.1-2.1V3.5c0-1.158.942-2.1 2.1-2.1h35c1.158 0 2.1.942 2.1 2.1v15.4c0 1.158-.942 2.1-2.1 2.1a.7.7 0 0 0 0 1.4c1.93 0 3.5-1.57 3.5-3.5V3.5C42 1.57 40.43 0 38.5 0zm-2.1 13.3v25.2c0 1.93-1.57 3.5-3.5 3.5H9.1c-1.93 0-3.5-1.57-3.5-3.5V13.3a.7.7 0 0 1 .7-.7h26.6a.7.7 0 1 1 0 1.4H7v24.5c0 1.158.942 2.1 2.1 2.1h23.8c1.158 0 2.1-.942 2.1-2.1V13.3a.7.7 0 0 1 1.4 0z"/>
 									</svg>
 								</span>
-								Через терминалы и&nbsp;банкоматы
-							</h3>
+                            Через терминалы и&nbsp;банкоматы
+                        </h3>
 
-							<article class="faq__item">
+                        <article class="faq__item">
 
-								<h4 class="faq__question h4">
-									Через терминалы и банкоматы
-								</h4>
+                            <h4 class="faq__question h4">
+                                Через терминалы и банкоматы
+                            </h4>
 
-								<div class="faq__answer">
+                            <div class="faq__answer">
 
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
 
-								</div>
+                            </div>
 
-							</article>
+                        </article>
 
-						</div>
+                    </div>
 
-						<div id="faq-3" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
+                    <div id="faq-3" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
 
-							<h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
+                        <h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M42 41.3a.7.7 0 0 1-.7.7H.7a.7.7 0 0 1 0-1.4h40.6a.7.7 0 0 1 .7.7zM4.9 18.2a.7.7 0 0 0 .7-.7V7h30.8v10.5a.7.7 0 0 0 1.4 0V6.3a.7.7 0 0 0-.7-.7H21V1.4h3.5v1.4h-2.1a.7.7 0 0 0 0 1.4h2.8a.7.7 0 0 0 .7-.7V.7a.7.7 0 0 0-.7-.7h-4.9a.7.7 0 0 0-.7.7v4.9H4.9a.7.7 0 0 0-.7.7v11.2a.7.7 0 0 0 .7.7zm7.7 20.3a.7.7 0 0 0 .7.7h15.4a.7.7 0 0 0 0-1.4H13.3a.7.7 0 0 0-.7.7zm-8.4-.7V21h-.7a.7.7 0 0 1 0-1.4h35a.7.7 0 0 1 0 1.4h-.7v16.8h.7a.7.7 0 0 1 0 1.4h-7a.7.7 0 0 1 0-1.4h.7V21H9.8v16.8h.7a.7.7 0 0 1 0 1.4h-7a.7.7 0 0 1 0-1.4h.7zm29.4 0h2.8V21h-2.8v16.8zm-28 0h2.8V21H5.6v16.8zm20.3-1.4a.7.7 0 0 0 .7-.7v-9.8a.698.698 0 0 0-.205-.495C26.329 25.34 24.746 23.8 21 23.8c-3.746 0-5.33 1.54-5.395 1.605a.698.698 0 0 0-.205.495v9.8a.7.7 0 0 0 1.4 0v-9.461c.428-.294 1.538-.893 3.5-1.013V32.2a.7.7 0 0 0 0 1.4v2.1a.7.7 0 0 0 1.4 0v-2.1a.7.7 0 0 0 0-1.4v-6.974c1.966.121 3.076.72 3.5 1.012V35.7a.7.7 0 0 0 .7.7zm-14-26.6a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7H9.1a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM9.8 14h1.4v-2.8H9.8V14zm23.1-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM30.8 14h1.4v-2.8h-1.4V14zm-4.9-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM23.8 14h1.4v-2.8h-1.4V14zm-4.9-4.2a.7.7 0 0 1 .7.7v4.2a.7.7 0 0 1-.7.7h-2.8a.7.7 0 0 1-.7-.7v-4.2a.7.7 0 0 1 .7-.7h2.8zM16.8 14h1.4v-2.8h-1.4V14z"/>
 									</svg>
 								</span>
-								В офисах компании
-							</h3>
+                            В офисах компании
+                        </h3>
 
-							<article class="faq__item">
+                        <article class="faq__item">
 
-								<h4 class="faq__question h4">
-									В офисах компании
-								</h4>
+                            <h4 class="faq__question h4">
+                                В офисах компании
+                            </h4>
 
-								<div class="faq__answer">
+                            <div class="faq__answer">
 
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
 
-								</div>
+                            </div>
 
-							</article>
+                        </article>
 
-						</div>
+                    </div>
 
-						<div id="faq-4" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
+                    <div id="faq-4" class="faq__block swiper-slide visuallyhidden faq__visuallyhidden">
 
-							<h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
+                        <h3 class="faq__nav-item visuallyhidden faq__visuallyhidden">
 								<span class="faq__nav-ico">
 									<svg width="42" height="42" viewBox="0 0 42 42">
 										<path d="M17.5 35h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm0-4.2h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm0-4.2h.7a.7.7 0 0 0 0-1.4h-.7a.7.7 0 0 0 0 1.4zm3.5 7a.7.7 0 0 0 0 1.4h5.6a.7.7 0 1 0 0-1.4H21zm7-3.5a.7.7 0 0 0-.7-.7H21a.7.7 0 0 0 0 1.4h6.3a.7.7 0 0 0 .7-.7zm4.9-14.7a.7.7 0 1 0 0-1.4h-4.2a.7.7 0 1 0 0 1.4h4.2zm-15.4 0h8.4a.7.7 0 1 0 0-1.4h-8.4a.7.7 0 0 0 0 1.4zM21 26.6h4.9a.7.7 0 1 0 0-1.4H21a.7.7 0 0 0 0 1.4zm-3.5-7h18.2a.7.7 0 1 0 0-1.4H17.5a.7.7 0 0 0 0 1.4zm15.363 12.042h2.01v.865h-2.01v2.143h-1.207v-2.143H30.45v-.865h1.206v-.839H30.45v-.865h1.206v-4.472c.6-.177 1.314-.266 2.145-.266.733 0 1.311.087 1.736.26.424.173.733.46.925.865.192.403.288.96.288 1.67 0 .719-.09 1.287-.268 1.704-.179.417-.454.714-.824.891-.371.178-.856.267-1.455.267-.196 0-.424-.014-.683-.04a7.252 7.252 0 0 1-.657-.093v.918zm0-1.717h.938c.42 0 .755-.058 1.005-.173.25-.115.436-.313.557-.592.12-.28.18-.668.18-1.165s-.06-.885-.18-1.165a1.102 1.102 0 0 0-.557-.592c-.25-.115-.585-.173-1.005-.173h-.938v3.86zM42 9.1v32.2a.7.7 0 0 1-.7.7H11.9a.7.7 0 0 1-.7-.7v-4.9H7.7a.7.7 0 0 1 0-1.4h3.5V9.1c0-1.158-.942-2.1-2.1-2.1C7.942 7 7 7.942 7 9.1v23.8c0 1.93-1.57 3.5-3.5 3.5S0 34.83 0 32.9V.7A.7.7 0 0 1 .7 0h29.4a.7.7 0 0 1 .7.7v2.8a.7.7 0 1 1-1.4 0V1.4h-28v31.5c0 1.158.942 2.1 2.1 2.1 1.158 0 2.1-.942 2.1-2.1V9.1c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5v31.5h28V9.1c0-1.158-.942-2.1-2.1-2.1H14a.7.7 0 0 1 0-1.4h24.5c1.93 0 3.5 1.57 3.5 3.5z"/>
 									</svg>
 								</span>
-								Другие варианты
-							</h3>
+                            Другие варианты
+                        </h3>
 
-							<article class="faq__item">
+                        <article class="faq__item">
 
-								<h4 class="faq__question h4">
-									Другие варианты
-								</h4>
+                            <h4 class="faq__question h4">
+                                Другие варианты
+                            </h4>
 
-								<div class="faq__answer">
+                            <div class="faq__answer">
 
-									<a href="/" target="_blank" class="faq__answer-link">
-										<svg class="icon-arrow-right">
-											<use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
-										</svg>
-										смотреть инструкцию
-									</a>
+                                <a href="/" target="_blank" class="faq__answer-link">
+                                    <svg class="icon-arrow-right">
+                                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#arrow-right"/>
+                                    </svg>
+                                    смотреть инструкцию
+                                </a>
 
-								</div>
+                            </div>
 
-							</article>
+                        </article>
 
-						</div>
+                    </div>
 
-					</div>
+                </div>
 
-				</div>
+            </div>
 
-			</div>
+        </div>
 
-		</section>
+    </section>
 
-    <section class="feedback">
+<? $APPLICATION->IncludeComponent(
+    "bitrix:news.list",
+    "feedback",
+    array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+        "ADD_SECTIONS_CHAIN" => "N",
+        "AJAX_MODE" => "N",
+        "AJAX_OPTION_ADDITIONAL" => "",
+        "AJAX_OPTION_HISTORY" => "N",
+        "AJAX_OPTION_JUMP" => "N",
+        "AJAX_OPTION_STYLE" => "Y",
+        "CACHE_FILTER" => "N",
+        "CACHE_GROUPS" => "N",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHECK_DATES" => "N",
+        "DETAIL_URL" => "",
+        "DISPLAY_BOTTOM_PAGER" => "N",
+        "DISPLAY_DATE" => "Y",
+        "DISPLAY_NAME" => "Y",
+        "DISPLAY_PICTURE" => "Y",
+        "DISPLAY_PREVIEW_TEXT" => "Y",
+        "DISPLAY_TOP_PAGER" => "N",
+        "FIELD_CODE" => array(),
+        "FILTER_NAME" => "",
+        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+        "IBLOCK_ID" => "1",
+        "IBLOCK_TYPE" => "info",
+        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+        "INCLUDE_SUBSECTIONS" => "N",
+        "MESSAGE_404" => "",
+        "NEWS_COUNT" => "10",
+        "PAGER_BASE_LINK_ENABLE" => "N",
+        "PAGER_DESC_NUMBERING" => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+        "PAGER_SHOW_ALL" => "N",
+        "PAGER_SHOW_ALWAYS" => "N",
+        "PAGER_TEMPLATE" => ".default",
+        "PAGER_TITLE" => "Новости",
+        "PARENT_SECTION" => "",
+        "PARENT_SECTION_CODE" => "",
+        "PREVIEW_TRUNCATE_LEN" => "",
+        "PROPERTY_CODE" => array(
+            "INFO"
+        ),
+        "SET_BROWSER_TITLE" => "N",
+        "SET_LAST_MODIFIED" => "N",
+        "SET_META_DESCRIPTION" => "N",
+        "SET_META_KEYWORDS" => "N",
+        "SET_STATUS_404" => "N",
+        "SET_TITLE" => "N",
+        "SHOW_404" => "N",
+        "SORT_BY1" => "SORT",
+        "SORT_BY2" => "ID",
+        "SORT_ORDER1" => "ASC",
+        "SORT_ORDER2" => "ASC",
+        "STRICT_SECTION_CHECK" => "N",
+        "COMPONENT_TEMPLATE" => ".default"
+    ),
+    false
+); ?>
 
-			<div class="center">
 
-				<h2 class="feedback__title h2">
-					Отзывы клиентов
-				</h2>
+<? $APPLICATION->IncludeComponent(
+    "bitrix:form.result.new",
+    "help",
+    array(
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHAIN_ITEM_LINK" => "",
+        "CHAIN_ITEM_TEXT" => "",
+        "EDIT_URL" => "result_edit.php",
+        "IGNORE_CUSTOM_TEMPLATE" => "N",
+        "LIST_URL" => "result_list.php",
+        "SEF_MODE" => "N",
+        "SUCCESS_URL" => "",
+        "USE_EXTENDED_ERRORS" => "N",
+        "VARIABLE_ALIASES" => array(
+            "RESULT_ID" => "RESULT_ID",
+            "WEB_FORM_ID" => "WEB_FORM_ID",
+        ),
+        "WEB_FORM_ID" => "1"
+    ),
+    false
+); ?>
 
-				<div class="feedback__slider swiper-container-style">
-
-					<div class="swiper-container swiper-container--feedback">
-
-						<div class="swiper-wrapper">
-
-<?$APPLICATION->IncludeComponent("bitrix:news.list", "feedback", Array(
-	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-		"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-		"AJAX_MODE" => "N",	// Включить режим AJAX
-		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-		"CACHE_GROUPS" => "N",	// Учитывать права доступа
-		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CHECK_DATES" => "N",	// Показывать только активные на данный момент элементы
-		"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-		"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
-		"DISPLAY_DATE" => "Y",	// Выводить дату элемента
-		"DISPLAY_NAME" => "Y",	// Выводить название элемента
-		"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-		"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-		"FIELD_CODE" => array(	// Поля
-			0 => "",
-			1 => "",
-		),
-		"FILTER_NAME" => "",	// Фильтр
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-		"IBLOCK_ID" => "1",	// Код информационного блока
-		"IBLOCK_TYPE" => "info",	// Тип информационного блока (используется только для проверки)
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-		"INCLUDE_SUBSECTIONS" => "N",	// Показывать элементы подразделов раздела
-		"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
-		"NEWS_COUNT" => "10",	// Количество новостей на странице
-		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-		"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-		"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-		"PAGER_TITLE" => "Новости",	// Название категорий
-		"PARENT_SECTION" => "",	// ID раздела
-		"PARENT_SECTION_CODE" => "",	// Код раздела
-		"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-		"PROPERTY_CODE" => array(	// Свойства
-			0 => "INFO",
-			1 => "",
-		),
-		"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-		"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-		"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-		"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-		"SET_STATUS_404" => "N",	// Устанавливать статус 404
-		"SET_TITLE" => "N",	// Устанавливать заголовок страницы
-		"SHOW_404" => "N",	// Показ специальной страницы
-		"SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-		"SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
-		"SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
-		"SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-		"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-		"COMPONENT_TEMPLATE" => ".default"
-	),
-	false
-);?>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-		<aside class="help-contacts">
-
-			<div class="center">
-
-				<div class="help-contacts__box">
-
-					<div class="help-contacts__content">
-
-						<h2 class="help-contacts__title h2">
-							Остались вопросы?
-						</h2>
-
-						<p class="help-contacts__intro">
-							Мы Вам поможем! <br> <a class="h3" href="tel:88007006202">8 800 700 62 02</a>
-						</p>
-
-					</div>
-
-					<form action="/" class="help-contacts__form" novalidate="novalidate">
-
-						<div class="help-contacts__form-input">
-
-							<svg class="icon-flag-russia">
-								<use xlink:href="/local/templates/blizfinans/images/sprite.svg#flag-russia"/>
-							</svg>
-
-<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "phone", Array(
-	"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
-		"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
-		"EDIT_URL" => "result_edit.php",	// Страница редактирования результата
-		"IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
-		"LIST_URL" => "result_list.php",	// Страница со списком результатов
-		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
-		"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
-		"USE_EXTENDED_ERRORS" => "N",	// Использовать расширенный вывод сообщений об ошибках
-		"VARIABLE_ALIASES" => array(
-			"RESULT_ID" => "RESULT_ID",
-			"WEB_FORM_ID" => "WEB_FORM_ID",
-		),
-		"WEB_FORM_ID" => "1",	// ID веб-формы
-	),
-	false
-);?>
-
-						</div>
-
-						<button class="btn btn--red">
-							<span>Перезвонить мне</span>
-						</button>
-						
-						
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</aside>
-	
-	
-<?
-require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
-?>
+<? require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php'); ?>
