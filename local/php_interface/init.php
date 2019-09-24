@@ -18,3 +18,8 @@ function formatSizeUnits($bytes)
 
     return $bytes;
 }
+
+function clearPhone($phone)
+{
+    return preg_replace('/\D/', '', $phone);
+}

@@ -1,8 +1,0 @@
-<% _.each(icons, function(icon) { %>
-
-.icon-<%= icon.name %> {
-  width: <%= icon.width %>px;
-  height: <%= icon.height %>px;
-  fill: <%= icon.fill %>;
-}
-<% }); %>

@@ -1,6 +1,5 @@
 <?
-$sSectionName = "office";
-$arDirProperties = Array(
-
-);
-?>
+$sSectionName = 'Офисы';
+$arDirProperties = [
+    'SHOW_TIMER' => 'Y'
+];

@@ -8,6 +8,21 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     </article>
 <? endif; ?>
 
+<? if ($APPLICATION->GetProperty('SHOW_TIMER') === 'Y'): ?>
+    <? $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "",
+        array(
+            "AREA_FILE_SHOW" => "file",
+            "AREA_FILE_SUFFIX" => "",
+            "EDIT_TEMPLATE" => "",
+            "PATH" => "/includes/timer.php"
+        ), false
+    ); ?>
+
+    <hr class="hidden-md">
+<? endif; ?>
+
 <article class="why-we">
     <div class="center">
         <h1 class="why-we__title h3">
@@ -57,17 +72,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 
 					<p class="footer__copyright hidden-md">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/copyright.php"
-	), false
-);?>					</p>
-
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/includes/footer/copyright.php"
+                            ), false
+                        ); ?>
+                    </p>
 				</div>
 
 				<div class="footer__right">
@@ -113,114 +128,103 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 						</div>
 
-						<p class="footer__address">
+                        <p class="footer__address">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/includes/footer/address.php"
+                                ), false
+                            ); ?>
 
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/address.php"
-	), false
-);?>
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/reg_number.php"
-	), false
-);?>
-							</p>
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/includes/footer/reg_number.php"
+                                ), false
+                            ); ?>
+                        </p>
 
-						<div class="footer__developer hidden-md">
-
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/developer.php"
-	), false
-);?>
-
-						</div>
-
+                        <div class="footer__developer hidden-md">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/includes/footer/developer.php"
+                                ), false
+                            ); ?>
+                        </div>
 					</div>
-
 				</div>
 
-				<div class="visible-md">
+                <div class="visible-md">
 
 					<span class="footer__address visible-sm">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/reg_number.php"
-	), false
-);?>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/includes/footer/reg_number.php"
+                            ), false
+                        ); ?>
 					</span>
 
-					<p class="footer__copyright">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/copyright.php"
-	), false
-);?>
-					</p>
+                    <p class="footer__copyright">
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/includes/footer/copyright.php"
+                            ), false
+                        ); ?>
+                    </p>
 
-					<div class="footer__developer">
-
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/developer.php"
-	), false
-);?>
-
-					</div>
-
+                    <div class="footer__developer">
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/includes/footer/developer.php"
+                            ), false
+                        ); ?>
+                    </div>
 				</div>
-
 			</div>
-
 		</div>
 
-		<div class="footer__bottom">
-
-			<p class="center">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/includes/footer/bottom.php"
-	), false
-);?>
-			</p>
-
-		</div>
+        <div class="footer__bottom">
+            <p class="center">
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/includes/footer/bottom.php"
+                    ), false
+                ); ?>
+            </p>
+        </div>
 
 	</footer>
 
