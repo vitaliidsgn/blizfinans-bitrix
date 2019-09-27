@@ -23,3 +23,18 @@ function clearPhone($phone)
 {
     return preg_replace('/\D/', '', $phone);
 }
+
+function classesToStr(array $classes)
+{
+    $result = [];
+
+    foreach ($classes as $class => $show) {
+        if (is_numeric($class)) {
+            $result[] = $show;
+        } elseif ($show) {
+            $result[] = $class;
+        }
+    }
+
+    return implode(' ', $result);
+}

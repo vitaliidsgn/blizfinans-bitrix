@@ -66,7 +66,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					<div class="footer__logo">
 
 						<a href="/">
-							<img src="/local/templates/blizfinans/img/logo.svg" alt="" width="240" height="50">
+							<img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo.svg" alt="Блицфинанс" width="240" height="50">
 						</a>
 
 					</div>
@@ -110,8 +110,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 								"USE_EXT" => "N",
 								"CACHE_SELECTED_ITEMS" => "N",
 							)
-						);?>	
-						
+						);?>
+
 
 					</div>
 
@@ -121,7 +121,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 							<a href="tel:88007006202">
 								<svg class="icon-bxs-phone-call" width="19" height="19" viewBox="0 0 19 19">
-									<use xlink:href="/local/templates/blizfinans/images/sprite.svg#bxs-phone-call"/>
+									<use xlink:href="<?= SITE_TEMPLATE_PATH; ?>/images/sprite.svg#bxs-phone-call"/>
 								</svg>
 								8 800 700 62 02
 							</a>
@@ -140,16 +140,18 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                                 ), false
                             ); ?>
 
-                            <? $APPLICATION->IncludeComponent(
-                                "bitrix:main.include",
-                                "",
-                                Array(
-                                    "AREA_FILE_SHOW" => "file",
-                                    "AREA_FILE_SUFFIX" => "",
-                                    "EDIT_TEMPLATE" => "",
-                                    "PATH" => "/includes/footer/reg_number.php"
-                                ), false
-                            ); ?>
+                            <span class="hidden-sm">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/includes/footer/reg-number.php"
+                                    ), false
+                                ); ?>
+                            </span>
                         </p>
 
                         <div class="footer__developer hidden-md">
@@ -177,7 +179,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "",
                                 "EDIT_TEMPLATE" => "",
-                                "PATH" => "/includes/footer/reg_number.php"
+                                "PATH" => "/includes/footer/reg-number.php"
                             ), false
                         ); ?>
 					</span>
@@ -196,16 +198,9 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                     </p>
 
                     <div class="footer__developer">
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/includes/footer/developer.php"
-                            ), false
-                        ); ?>
+                        <a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
+                            Разработка сайта <b>Sputnik</b>
+                        </a>
                     </div>
 				</div>
 			</div>
@@ -230,97 +225,26 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 </div>
 
-	<div class="modal">
+<div class="modal">
 
-		<div class="modal__box">
+    <div class="modal__box">
+        <div class="modal__item modal__item--lk">
+            <? $APPLICATION->IncludeComponent('wonderbase:sputnik.login', ''); ?>
+        </div>
 
-			<div class="modal__item modal__item--lk">
+        <div class="modal__item modal__item--reset">
+            <? $APPLICATION->IncludeComponent('wonderbase:sputnik.forgot.password', ''); ?>
+        </div>
 
-				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+        <button type="button" class="modal__close modal__close-btn button">
+            Закрыть
+        </button>
 
-					<h3 class="modal-form__title h3">
-						Вход в личный кабинет
-					</h3>
+    </div>
 
-					<label class="modal-form__input input-box">
+</div>
 
-						<input class="input-box__input input" name="email" type="email">
-
-						<span class="input-box__label">
-							Email
-						</span>
-
-					</label>
-
-					<label class="modal-form__input input-box">
-
-						<input class="input-box__input input" name="password" type="password">
-
-						<span class="input-box__label">
-							Пароль
-						</span>
-
-					</label>
-
-					<div class="modal-form__links">
-
-						<button class="modal-form__links-red button" type="button" data-modal="reset">
-							Забыли пароль?
-						</button>
-
-						<button class="modal-form__links-dark button" type="button" data-modal="reg">
-							Регистрация
-						</button>
-
-					</div>
-
-					<button class="modal-form__submit btn btn--big btn--red">
-						<span>Войти</span>
-					</button>
-
-				</form>
-
-			</div>
-
-			<div class="modal__item modal__item--reset">
-
-				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
-
-					<h3 class="modal-form__title h3">
-						Восстановление пароля
-					</h3>
-
-					<label class="modal-form__input input-box input-box--error">
-
-						<input class="input-box__input input input--error" name="email" type="email">
-
-						<span class="input-box__label">
-							Email
-						</span>
-
-						<span class="input-box__text">
-							Не верно введён e-mail
-						</span>
-
-					</label>
-
-					<button class="modal-form__submit btn btn--big btn--red">
-						<span>Отправить</span>
-					</button>
-
-				</form>
-
-			</div>
-
-			<button type="button" class="modal__close modal__close-btn button">
-				Закрыть
-			</button>
-
-		</div>
-
-	</div>
-
-<script data-skip-moving="true" defer src="/local/templates/blizfinans/js/scripts.js?nc=<?=filectime($_SERVER['DOCUMENT_ROOT'].'/local/templates/blizfinans/js/scripts.js')?>"></script>
+<script data-skip-moving="true" defer src="<?= \CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/js/scripts.min.js', true); ?>"></script>
 
 </body>
 </html>						

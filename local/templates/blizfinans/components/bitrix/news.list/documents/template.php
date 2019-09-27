@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 
-if (empty($arResult["ITEMS"])) return;
+if (empty($arResult['ITEMS'])) return;
 ?>
 
 <ul class="documents">

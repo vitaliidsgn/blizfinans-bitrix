@@ -5,11 +5,6 @@ use \Bitrix\Main\Page\Asset;
 
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.min.css');
 
-CJSCore::Init(['jquery']);
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/addon.js');
-
-
-
 if (CMain::IsHTTPS()) {
     $siteUrl = 'https://' . SITE_SERVER_NAME;
 } else {
@@ -20,10 +15,10 @@ if (CMain::IsHTTPS()) {
 <head>
     <title><? $APPLICATION->ShowTitle(); ?></title>
 
-    <link href="/local/templates/blizfinans/css/styles.min.css" rel="preload" as="style">
-    <link href="/local/templates/blizfinans/js/scripts.js" rel="preload" as="script">
+    <link href="<?= \CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/css/styles.min.css', true); ?>" rel="preload" as="style">
+    <link href="<?= \CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/js/scripts.min.js', true); ?>" rel="preload" as="script">
 
-    <link href="/local/templates/blizfinans/img/favicon.png" rel="apple-touch-icon-precomposed">
+    <link href="<?= SITE_TEMPLATE_PATH; ?>/img/favicon.png" rel="apple-touch-icon-precomposed">
 
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,6 +41,10 @@ if (CMain::IsHTTPS()) {
     <meta name="twitter:title" content="<? $APPLICATION->ShowProperty("twitter:title"); ?>">
     <meta name="twitter:image" content="<?= $siteUrl ?><? $APPLICATION->ShowProperty("twitter:image"); ?>">
 
+    <script>
+        var SITE_TEMPLATE_PATH = '<?= SITE_TEMPLATE_PATH; ?>';
+    </script>
+
     <? $APPLICATION->ShowHead(); ?>
 </head>
 <body>
@@ -54,18 +53,20 @@ if (CMain::IsHTTPS()) {
     <? $APPLICATION->ShowPanel(); ?>
 </div>
 
+<?= '<div class="wrapper">'; ?>
+
 <header class="header">
     <div class="center">
         <div class="header__logo">
-            <a href="/">
-                <img src="/local/templates/blizfinans/img/logo.svg" alt="" width="240" height="50">
+            <a href="/" title="На главную">
+                <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo.svg" alt="Блицфинанс" width="240" height="50">
             </a>
         </div>
 
         <div class="visible-md">
             <button type="button" data-modal="lk" class="header__lk-ico button" aria-label="Личный кабинет">
                 <svg class="icon-bx-log-in visible-md" width="15" height="15" viewBox="0 0 15 15">
-                    <use xlink:href="/local/templates/blizfinans/images/sprite.svg#bx-log-in"/>
+                    <use xlink:href="<?= SITE_TEMPLATE_PATH; ?>/images/sprite.svg#bx-log-in"/>
                 </svg>
             </button>
 
@@ -83,7 +84,7 @@ if (CMain::IsHTTPS()) {
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:menu",
                     "top",
-                    Array(
+                    array(
                         "ALLOW_MULTI_SELECT" => "N",
                         "CHILD_MENU_TYPE" => "",
                         "DELAY" => "N",
@@ -102,7 +103,7 @@ if (CMain::IsHTTPS()) {
             <div class="header__tel">
                 <a href="tel:88007006202">
                     <svg class="icon-bxs-phone-call" width="19" height="19" viewBox="0 0 19 19">
-                        <use xlink:href="/local/templates/blizfinans/images/sprite.svg#bxs-phone-call"/>
+                        <use xlink:href="<?= SITE_TEMPLATE_PATH; ?>/images/sprite.svg#bxs-phone-call"/>
                     </svg>
                     8 800 700 62 02
                 </a>
@@ -119,7 +120,7 @@ if (CMain::IsHTTPS()) {
 
 <main class="main">
     <? if (!\CSite::InDir(SITE_DIR . 'index.php')): ?>
-        <article class="page">
-            <div class="center">
-                <h1 class="page__title h2"><? $APPLICATION->ShowTitle(false); ?></h1>
-    <? endif; ?>
+    <article class="page">
+        <div class="center">
+            <h1 class="page__title h2"><? $APPLICATION->ShowTitle(false); ?></h1>
+<? endif; ?>

@@ -1,15 +1,25 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
+/** @var array $arParams */
+/** @var array $arResult */
+/** @global CMain $APPLICATION */
+/** @global CUser $USER */
+/** @global CDatabase $DB */
+/** @var CBitrixComponentTemplate $this */
+/** @var string $templateName */
+/** @var string $templateFile */
+/** @var string $templateFolder */
+/** @var string $componentPath */
+/** @var CBitrixComponent $component */
 
-<?if (!empty($arResult)):?>
+$this->setFrameMode(true);
+
+if (!$arResult) return;
+?>
 
 <ul>
-<?foreach ($arResult as $n => $arItem):?>
-
-	<li>
-		<a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a>
-	</li>
-	
-<?endforeach?>
+    <? foreach ($arResult as $n => $arItem): ?>
+        <li>
+            <a href="<?= $arItem['LINK'] ?>"><?= $arItem['TEXT'] ?></a>
+        </li>
+    <? endforeach ?>
 </ul>
-
-<?endif;?>

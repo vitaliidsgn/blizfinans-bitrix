@@ -19,10 +19,10 @@ if (empty($arResult['SECTIONS'])) return;
 <ul class="office-list">
     <? foreach ($arResult['SECTIONS'] as $arSection): ?>
         <?
-        $this->AddEditAction($arResult['SECTION']['ID'], $arResult['SECTION']['EDIT_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'SECTION_EDIT'));
-        $this->AddDeleteAction($arResult['SECTION']['ID'], $arResult['SECTION']['DELETE_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'SECTION_DELETE'));
+        $this->AddEditAction($arSection['ID'], $arSection['EDIT_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'SECTION_EDIT'));
+        $this->AddDeleteAction($arSection['ID'], $arSection['DELETE_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'SECTION_DELETE'));
         ?>
-        <li id="<?= $this->GetEditAreaId($arResult['SECTION']['ID']); ?>">
+        <li id="<?= $this->GetEditAreaId($arSection['ID']); ?>">
             <? if ($arSection['CODE'] == $arParams['CURRENT_SECTION_CODE']): ?>
                 <?= $arSection['NAME']; ?>
             <? else: ?>
