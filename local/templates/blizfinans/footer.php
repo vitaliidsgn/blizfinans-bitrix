@@ -198,9 +198,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                     </p>
 
                     <div class="footer__developer">
-                        <a rel="nofollow" target="_blank" href="https://sptnk.co/ru/">
-                            Разработка сайта <b>Sputnik</b>
-                        </a>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/includes/footer/developer.php"
+                            ), false
+                        ); ?>
                     </div>
 				</div>
 			</div>
